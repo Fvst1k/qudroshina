@@ -1,0 +1,33 @@
+.footer {
+  background: #232323;
+  margin-top: auto;
+}
+.footer__row {
+  padding: 40px 0;
+
+  a, p {
+    color: #ffffff;
+  }
+
+}
+.header__menu_wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  a {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+}
+.footer__politics {
+  margin-top: 20px;
+  text-decoration: underline;
+  font-size: 10px;
+  opacity: 0.7;
+
+}
+.header-link_footer {
+
+    opacity: 0.9;
+
+}
