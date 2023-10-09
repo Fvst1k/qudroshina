@@ -4,7 +4,6 @@ html, body {
   height: 100%;
   background: #ffffff;
   scroll-behavior: smooth;
-  font: 24px/1.1 'Inter', sans-serif;
 
 }
 
@@ -91,6 +90,12 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
+}
+.hover_scale {
+  transition: ease-in-out all 0.3s;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 
