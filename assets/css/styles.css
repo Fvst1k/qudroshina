@@ -241,6 +241,134 @@ a {
   height: 19px;
 }
 
+/*=================================================Hero section*======================================================*/
+.hero {
+  background: url("../../assets/img/hero-background.png"), lightgray 50%/cover no-repeat;
+}
+
+.block__content_hero {
+  position: relative;
+  padding: 200px 20px;
+}
+.block__content_hero svg {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}
+@media screen and (max-width: 991px) {
+  .block__content_hero {
+    justify-content: center;
+  }
+  .block__content_hero svg {
+    display: none;
+  }
+}
+
+.hero__text {
+  position: relative;
+}
+
+.hero__overlay-text {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 38px;
+  font-size: 20px;
+  align-items: center;
+}
+.hero__overlay-text span {
+  display: block;
+  margin-right: 20px;
+  width: 57px;
+  height: 1px;
+  background: #171717;
+}
+@media screen and (max-width: 767px) {
+  .hero__overlay-text {
+    font-size: 14px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 25px;
+  max-width: 775px;
+  width: 100%;
+  word-wrap: break-word;
+  font-family: "Prosto One";
+  font-size: 47px;
+}
+@media screen and (max-width: 991px) {
+  .hero__title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 22px;
+  }
+}
+
+.hero__subtitle {
+  margin-bottom: 28px;
+  max-width: 450px;
+  width: 100%;
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 1.4;
+}
+@media screen and (max-width: 767px) {
+  .hero__subtitle {
+    font-size: 18px;
+  }
+}
+
+.hero__btn {
+  display: block;
+  text-align: center;
+  padding: 31px 35px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 8px;
+  background: #F08E2B;
+  color: #FFF;
+  font-family: Raleway;
+  font-weight: 700;
+  transition: all ease-in-out 0.4s;
+}
+.hero__btn:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 767px) {
+  .hero__btn {
+    padding: 18px 45px;
+  }
+}
+
+.hero__car-img {
+  position: absolute;
+  top: 8%;
+  right: 23%;
+  transform: translate(50%, -18%);
+}
+.hero__car-img img {
+  object-fit: contain;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .hero__car-img {
+    top: 30%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hero__car-img {
+    position: unset;
+    transform: unset;
+  }
+}
+
+/*=================================================/Hero section*======================================================*/
 .footer {
   background: #232323;
   margin-top: auto;
