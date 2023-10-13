@@ -137,6 +137,124 @@ Template Name: home
         </div>
     </div>
 </section>
+<section class="price-table">
+    <div class="block__content block__content_price-table">
+        <h2 class="price-table__title">ПРАЙС</h2>
+        <p class="price-table__subtitle">Комплекс шиномонтажа легковых автомобилей</p>
+        <div class="mobile-table">
+            <table class="price-table__table ">
+                <tbody>
+                <tr class="price-table__table-row-1">
+                    <th class="price-table__table-col-1">Услуги</th>
+                    <th class="price-table__th-style">R13</th>
+                    <th class="price-table__th-style">R14</th>
+                    <th class="price-table__th-style">R15</th>
+                    <th class="price-table__th-style">R16</th>
+                    <th class="price-table__th-style">R17</th>
+                    <th class="price-table__th-style">R18</th>
+                    <th class="price-table__th-style">R19</th>
+                    <th class="price-table__th-style">R20</th>
+                    <th class="price-table__th-style">R21</th>
+                    <th class="price-table__th-style">R22</th>
+                    <th class="price-table__th-style">R23</th>
+                    <th class="price-table__th-style">R24</th>
+                </tr>
+                <tr class="price-table__table-row-2" >
+                    <td class="price-table__table-service">Снятие – установка колеса на автомобиль</td>
+                    <td>200</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>430</td>
+                    <td>430</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>700</td>
+                    <td>800</td>
+                </tr>
+                <tr class="price-table__table-row-3">
+                    <td class="price-table__table-service">Демонтаж шины</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>300</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>700</td>
+                </tr>
+                <tr class="price-table__table-row-4">
+                    <td class="price-table__table-service">Монтаж шины</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>300</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>700</td>
+                </tr>
+                <tr class="price-table__table-row-5">
+                    <td class="price-table__table-service">Балансировка</td>
+                    <td>300</td>
+                    <td>300</td>
+                    <td>300</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>430</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>700</td>
+                    <td>800</td>
+                    <td>900</td>
+                </tr>
+                <tr class="price-table__table-row-6">
+                    <td class="price-table__table-service">Комплекс для 1 колеса (Снятие, установка, демонтаж, монтаж, балансировка)</td>
+                    <td>800</td>
+                    <td>850</td>
+                    <td>900</td>
+                    <td>1050</td>
+                    <td>1100</td>
+                    <td>1300</td>
+                    <td>1500</td>
+                    <td>1700</td>
+                    <td>1900</td>
+                    <td>2200</td>
+                    <td>2450</td>
+                    <td>2500</td>
+                </tr>
+                <tr class="price-table__table-row-7">
+                    <td class="price-table__table-service price-table__table-service_7">Комплекс для 4-х колеса (Снятие, установка, демонтаж, монтаж, балансировка)</td>
+                    <td class="price-table__table-row-7-style">3000</td>
+                    <td class="price-table__table-row-7-style">3300</td>
+                    <td class="price-table__table-row-7-style">3500</td>
+                    <td class="price-table__table-row-7-style">4000</td>
+                    <td class="price-table__table-row-7-style">4300</td>
+                    <td class="price-table__table-row-7-style">4700</td>
+                    <td class="price-table__table-row-7-style">5000</td>
+                    <td class="price-table__table-row-7-style">6000</td>
+                    <td class="price-table__table-row-7-style">7000</td>
+                    <td class="price-table__table-row-7-style">8000</td>
+                    <td class="price-table__table-row-7-style">9000</td>
+                    <td class="price-table__table-row-7-style">10000</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
 
 
 <?php get_footer(); ?>
