@@ -656,6 +656,101 @@ a {
 }
 
 /*=================================================/ADVANTAGES======================================================*/
+/*=================================================BOOKING======================================================*/
+.booking {
+  margin-bottom: 170px;
+}
+
+.block__content_booking {
+  max-width: 1300px;
+  width: 100%;
+}
+
+.booking__card {
+  position: relative;
+  max-height: 368px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 10px 50px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 20px 0px rgba(77, 77, 77, 0.34);
+  background: url("../../assets/img/hero-background.png"), lightgray 50%/cover no-repeat;
+}
+@media screen and (max-width: 991px) {
+  .booking__card {
+    flex-wrap: wrap;
+    max-height: unset;
+    overflow: hidden;
+  }
+}
+
+.booking__card-info svg {
+  margin-right: 20px;
+}
+
+.booking__card-title {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-family: "Prosto One";
+  font-size: 48px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1199px) {
+  .booking__card-title {
+    white-space: unset;
+  }
+}
+
+.booking__card-text {
+  margin-bottom: 40px;
+  max-width: 515px;
+  width: 100%;
+  font-family: Raleway;
+  line-height: 1.6;
+}
+
+.booking__phone-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.booking__phone {
+  color: #E78B2F;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Prosto One";
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.booking__img {
+  position: relative;
+  z-index: 100000;
+  margin-top: -20px;
+  margin-right: -15px;
+}
+@media screen and (max-width: 991px) {
+  .booking__img {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+}
+
+.booking__tread-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 991px) {
+  .booking__tread-img {
+    top: unset;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/*=================================================/BOOKING======================================================*/
 .footer {
   background: #232323;
   margin-top: auto;
