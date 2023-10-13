@@ -69,10 +69,44 @@ Template Name: home
                 </div>
             </div>
             <div class="about-us__item about-us__item_6">
-                <p class="about-us__text">Наши мастерские предлагают полный цикл по техническому обслуживанию и ремонту вашего автомобиля: двигателя, подвески, электрики, компьютерная диагностика электронной части автомобиля, развал-схождение 3D, малярно-кузовной, ремонт и изготовление глушителей и катализаторов, заправка и ремонт автокондиционеров, сварка аргон, шиномонтаж и т.п.</p>
-                <p class="about-us__text">Так же при наших техцентрах находятся магазины автозапчастей, в ассортименте которых запчасти, масла и автохимия для автомобилей отечественного производства и иномарок.</p>
+                <p class="about-us__text">Наши мастерские предлагают полный цикл по техническому обслуживанию и ремонту
+                    вашего автомобиля: двигателя, подвески, электрики, компьютерная диагностика электронной части
+                    автомобиля, развал-схождение 3D, малярно-кузовной, ремонт и изготовление глушителей и катализаторов,
+                    заправка и ремонт автокондиционеров, сварка аргон, шиномонтаж и т.п.</p>
+                <p class="about-us__text">Так же при наших техцентрах находятся магазины автозапчастей, в ассортименте
+                    которых запчасти, масла и автохимия для автомобилей отечественного производства и иномарок.</p>
             </div>
         </div>
+    </div>
+</section>
+<section class="advantages">
+    <div class="block__content block__content_advantages">
+        <h2 class="advantages__title">МЫ ЛУЧШИЕ ПОТОМУ ЧТО</h2>
+        <div class="advantages__items">
+            <div class="advantages__item">
+                <div class="advantages__item-number">1</div>
+                <h3 class="advantages__item-title">Мы рядом с домом</h3>
+                <p class="advantages__item-text">У нас большая сеть техцентров и вы всегда можете выбрать ту, что ближе всех
+                    к вашему дому </p>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-number">2</div>
+                <h3 class="advantages__item-title">Работаем быстро</h3>
+                <p class="advantages__item-text">Благодаря высокой квалификации персонала и самому современному
+                    оборудованию </p>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-number">3</div>
+                <h3 class="advantages__item-title">Работаем круглосуточно</h3>
+                <p class="advantages__item-text">В большинстве наших мастерских доступна круглосуточная замена шин </p>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-number">4</div>
+                <h3 class="advantages__item-title">Магазины при мастерских</h3>
+                <p class="advantages__item-text">Вам не прийдется долго ждать запчастей! Все найдется в наших магазинах </p>
+            </div>
+        </div>
+
     </div>
 </section>
 
