@@ -86,7 +86,8 @@ Template Name: home
             <div class="advantages__item">
                 <div class="advantages__item-number">1</div>
                 <h3 class="advantages__item-title">Мы рядом с домом</h3>
-                <p class="advantages__item-text">У нас большая сеть техцентров и вы всегда можете выбрать ту, что ближе всех
+                <p class="advantages__item-text">У нас большая сеть техцентров и вы всегда можете выбрать ту, что ближе
+                    всех
                     к вашему дому </p>
             </div>
             <div class="advantages__item">
@@ -103,10 +104,37 @@ Template Name: home
             <div class="advantages__item">
                 <div class="advantages__item-number">4</div>
                 <h3 class="advantages__item-title">Магазины при мастерских</h3>
-                <p class="advantages__item-text">Вам не прийдется долго ждать запчастей! Все найдется в наших магазинах </p>
+                <p class="advantages__item-text">Вам не прийдется долго ждать запчастей! Все найдется в наших
+                    магазинах </p>
             </div>
         </div>
 
+    </div>
+</section>
+<section class="booking">
+    <div class="block__content block__content_booking">
+        <div class="booking__card">
+            <div class="booking__card-info">
+                <h2 class="booking__card-title">ЗАПИСЬ ПО ТЕЛЕФОНУ</h2>
+                <p class="booking__card-text">Чтобы вам не пришлось стоять в очереди в пик сезона запишитесь заранее по
+                    круглосуточному номеру</p>
+                <div class="booking__phone-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" viewBox="0 0 38 29" fill="none">
+                        <path d="M2 27L10.5353 15.9042C11.3914 14.7912 11.361 13.2332 10.4621 12.1545L2 2" stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17 24L23.5353 15.5042C24.3914 14.3912 24.361 12.8332 23.4621 11.7545L17 4" stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31 22L35.5353 16.1042C36.3914 14.9912 36.361 13.4332 35.4621 12.3545L31 7" stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="tel:+78129394647" class="booking__phone">+7 (812) 939-46-47</a>
+                </div>
+            </div>
+            <div class="booking__img">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/wheels.png" alt="wheels">
+            </div>
+            <div class="booking__tread-img">
+                <img  src="<?php echo get_template_directory_uri() ?>/assets/img/tread-booking.png" alt="wheels">
+            </div>
+
+        </div>
     </div>
 </section>
 
