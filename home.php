@@ -120,9 +120,12 @@ Template Name: home
                     круглосуточному номеру</p>
                 <div class="booking__phone-info">
                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" viewBox="0 0 38 29" fill="none">
-                        <path d="M2 27L10.5353 15.9042C11.3914 14.7912 11.361 13.2332 10.4621 12.1545L2 2" stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17 24L23.5353 15.5042C24.3914 14.3912 24.361 12.8332 23.4621 11.7545L17 4" stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M31 22L35.5353 16.1042C36.3914 14.9912 36.361 13.4332 35.4621 12.3545L31 7" stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 27L10.5353 15.9042C11.3914 14.7912 11.361 13.2332 10.4621 12.1545L2 2"
+                              stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17 24L23.5353 15.5042C24.3914 14.3912 24.361 12.8332 23.4621 11.7545L17 4"
+                              stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31 22L35.5353 16.1042C36.3914 14.9912 36.361 13.4332 35.4621 12.3545L31 7"
+                              stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <a href="tel:+78129394647" class="booking__phone">+7 (812) 939-46-47</a>
                 </div>
@@ -131,7 +134,7 @@ Template Name: home
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/wheels.png" alt="wheels">
             </div>
             <div class="booking__tread-img">
-                <img  src="<?php echo get_template_directory_uri() ?>/assets/img/tread-booking.png" alt="wheels">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/tread-booking.png" alt="wheels">
             </div>
 
         </div>
@@ -159,7 +162,7 @@ Template Name: home
                     <th class="price-table__th-style">R23</th>
                     <th class="price-table__th-style">R24</th>
                 </tr>
-                <tr class="price-table__table-row-2" >
+                <tr class="price-table__table-row-2">
                     <td class="price-table__table-service">Снятие – установка колеса на автомобиль</td>
                     <td>200</td>
                     <td>250</td>
@@ -220,7 +223,9 @@ Template Name: home
                     <td>900</td>
                 </tr>
                 <tr class="price-table__table-row-6">
-                    <td class="price-table__table-service">Комплекс для 1 колеса (Снятие, установка, демонтаж, монтаж, балансировка)</td>
+                    <td class="price-table__table-service">Комплекс для 1 колеса (Снятие, установка, демонтаж, монтаж,
+                        балансировка)
+                    </td>
                     <td>800</td>
                     <td>850</td>
                     <td>900</td>
@@ -235,7 +240,9 @@ Template Name: home
                     <td>2500</td>
                 </tr>
                 <tr class="price-table__table-row-7">
-                    <td class="price-table__table-service price-table__table-service_7">Комплекс для 4-х колеса (Снятие, установка, демонтаж, монтаж, балансировка)</td>
+                    <td class="price-table__table-service price-table__table-service_7">Комплекс для 4-х колеса (Снятие,
+                        установка, демонтаж, монтаж, балансировка)
+                    </td>
                     <td class="price-table__table-row-7-style">3000</td>
                     <td class="price-table__table-row-7-style">3300</td>
                     <td class="price-table__table-row-7-style">3500</td>
@@ -258,7 +265,8 @@ Template Name: home
 <section class="calculation">
     <div class="block__content block__content_calculator">
         <h2 class="calculation__title">РАССЧИТАТЬ СТОИМОСТЬ ШИНОМОНТАЖНЫХ РАБОТ</h2>
-        <p class="calculation__subtitle">С помощью калькулятора вы заранее можете рассчитать стоимость шиномонтажных работ</p>
+        <p class="calculation__subtitle">С помощью калькулятора вы заранее можете рассчитать стоимость шиномонтажных
+            работ</p>
         <div class="calculation__calculator">
             <div class="calculation__calculator-type">
                 <p class="calculation__option-name">Тип шины</p>
@@ -269,15 +277,15 @@ Template Name: home
                     <option value="car">легковой</option>
                 </select>
             </div>
-           <div class="calculation__calculator-diameter">
-               <p class="calculation__option-name">Диаметр</p>
-               <select name="diameter" id="diameter">
-                   <option value="car">R14</option>
-                   <option value="car">R15</option>
-                   <option value="car">R16</option>
-                   <option value="car">R17</option>
-               </select>
-           </div>
+            <div class="calculation__calculator-diameter">
+                <p class="calculation__option-name">Диаметр</p>
+                <select name="diameter" id="diameter">
+                    <option value="car">R14</option>
+                    <option value="car">R15</option>
+                    <option value="car">R16</option>
+                    <option value="car">R17</option>
+                </select>
+            </div>
             <div class="calculation__calculator-address">
                 <p class="calculation__option-name">Выберите сервисный центр</p>
                 <select name="address" id="address">
@@ -333,8 +341,45 @@ Template Name: home
         </div>
     </div>
 </section>
+<section class="reviews">
+    <div class="block__content block__content_reviews">
+        <h2 class="reviews__title">
+            ОТЗЫВЫ
+        </h2>
+        <div class="reviews__slider-wrapper">
+            <button class="slick-prev slider-arrow-prev"></button>
+            <button class="slick-prev slider-arrow-next"></button>
+            <div class="reviews__slider">
+                <div class="reviews__slider-item">
+                    <h3 class="reviews__name">Владимир</h3>
+                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но и
+                        предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
+                        рекомендую!</p>
+                </div>
+                <div class="reviews__slider-item">
+                    <h3 class="reviews__name">Владимир</h3>
+                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но и
+                        предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
+                        рекомендую!</p>
+                </div>
+                <div class="reviews__slider-item">
+                    <h3 class="reviews__name">Владимир</h3>
+                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но и
+                        предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
+                        рекомендую!</p>
+                </div>
+                <div class="reviews__slider-item">
+                    <h3 class="reviews__name">Владимир</h3>
+                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но и
+                        предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
+                        рекомендую!</p>
+                </div>
 
+            </div>
+        </div>
 
+    </div>
+</section>
 
 
 <?php get_footer(); ?>

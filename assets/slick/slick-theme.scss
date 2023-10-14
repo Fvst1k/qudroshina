@@ -71,13 +71,13 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 99%;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    z-index: 10000000000;
     padding: 0;
     border: none;
     outline: none;
+    transition: all ease-in-out 0.3s;
+
+
     &:hover, &:focus {
         outline: none;
         background: transparent;
@@ -101,37 +101,11 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: 44%;
-    @include before-md () {
-        left: 40%;
-    }
-    [dir="rtl"] & {
-        left: auto;
-        right: -25px;
-    }
-    &:before {
-        content: $slick-prev-character;
-        [dir="rtl"] & {
-            content: $slick-next-character;
-        }
-    }
+
 }
 
 .slick-next {
-    right: 48%;
-    @include before-md () {
-        right: 42%;
-    }
-    [dir="rtl"] & {
-        left: -25px;
-        right: auto;
-    }
-    &:before {
-        content: $slick-next-character;
-        [dir="rtl"] & {
-            content: $slick-prev-character;
-        }
-    }
+
 }
 
 /* Dots */
