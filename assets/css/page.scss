@@ -750,6 +750,58 @@ select{
 
 /*=================================================EMPLOYEES======================================================*/
 
+.employees__slider {
+
+}
+.block__content_employees{
+
+}
+.employees__slider{
+
+}
+.employees__title{
+  margin-bottom: 18px;
+  font-family: "Prosto One";
+  font-size: 48px;
+  line-height: 1.2;
+}
+.employees__subtitle{
+  margin-bottom: 50px;
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.employees__slider-item {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 40px;
+
+  border-radius: 30px;
+  width: 560px;
+  height: 315px;
+
+  overflow: hidden;
+  margin-right: 40px;
+  position: relative;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  @include before-md() {
+    width: 500px;
+  }
+  @include before-sm() {
+    width: 299px;
+  }
+
+}
+.employees__slider-item::before, .employees__slider-item {
+  content: "";
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
 
