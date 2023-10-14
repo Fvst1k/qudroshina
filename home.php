@@ -255,6 +255,61 @@ Template Name: home
 
     </div>
 </section>
+<section class="calculation">
+    <div class="block__content block__content_calculator">
+        <h2 class="calculation__title">РАССЧИТАТЬ СТОИМОСТЬ ШИНОМОНТАЖНЫХ РАБОТ</h2>
+        <p class="calculation__subtitle">С помощью калькулятора вы заранее можете рассчитать стоимость шиномонтажных работ</p>
+        <div class="calculation__calculator">
+            <div class="calculation__calculator-type">
+                <p class="calculation__option-name">Тип шины</p>
+                <select name="passenger-car" id="passenger-car">
+                    <option value="car">легковой</option>
+                    <option value="car">легковой</option>
+                    <option value="car">легковой</option>
+                    <option value="car">легковой</option>
+                </select>
+            </div>
+           <div class="calculation__calculator-diameter">
+               <p class="calculation__option-name">Диаметр</p>
+               <select name="diameter" id="diameter">
+                   <option value="car">R14</option>
+                   <option value="car">R15</option>
+                   <option value="car">R16</option>
+                   <option value="car">R17</option>
+               </select>
+           </div>
+            <div class="calculation__calculator-address">
+                <p class="calculation__option-name">Выберите сервисный центр</p>
+                <select name="address" id="address">
+                    <option value="car">Маршала Казакова 25А</option>
+                    <option value="car">Маршала Казакова 25А</option>
+                    <option value="car">Маршала Казакова 25А</option>
+                    <option value="car">Маршала Казакова 25А</option>
+                </select>
+            </div>
+            <div class="calculation__calculator-work-type">
+                <p class="calculation__option-name">Тип работ</p>
+                <select name="work-type" id="work-type">
+                    <option value="car">Полный переобув</option>
+                    <option value="car">Полный переобув</option>
+                    <option value="car">Полный переобув</option>
+                    <option value="car">Полный переобув</option>
+                </select>
+            </div>
+            <div class="calculation__calculator-checkbox">
+                <label class="checkbox-btn">
+                    <input type="checkbox">
+                    <span>Checkbox #2</span>
+                </label>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+
 
 
 <?php get_footer(); ?>
