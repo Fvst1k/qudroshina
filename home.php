@@ -308,6 +308,31 @@ Template Name: home
 
     </div>
 </section>
+<section class="employees">
+    <div class="block__content block__content_employees">
+        <h2 class="employees__title">
+            Сотрудники
+        </h2>
+        <p class="employees__subtitle">В наших техцентрах работают для вас</p>
+        <div class="employees__slider">
+            <div class="employees__slider-item">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/employer-2.png" alt="employer">
+            </div>
+            <div class="employees__slider-item">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/employer-2.png" alt="employer">
+            </div>
+            <div class="employees__slider-item">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/employer-2.png" alt="employer">
+            </div>
+            <div class="employees__slider-item">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/employer-3.png" alt="employer">
+            </div>
+            <div class="employees__slider-item">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/employer-3.png" alt="employer">
+            </div>
+        </div>
+    </div>
+</section>
 
 
 

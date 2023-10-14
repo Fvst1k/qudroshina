@@ -999,6 +999,54 @@ select option {
 
 /*=================================================/CALCULATOR======================================================*/
 /*=================================================EMPLOYEES======================================================*/
+.employees__title {
+  margin-bottom: 18px;
+  font-family: "Prosto One";
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.employees__subtitle {
+  margin-bottom: 50px;
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.employees__slider-item {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  width: 560px;
+  height: 315px;
+  overflow: hidden;
+  margin-right: 40px;
+  position: relative;
+}
+.employees__slider-item iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .employees__slider-item {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .employees__slider-item {
+    width: 299px;
+  }
+}
+
+.employees__slider-item::before, .employees__slider-item {
+  content: "";
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /*=================================================/EMPLOYEES======================================================*/
 .footer {
   background: #232323;
@@ -1073,6 +1121,11 @@ select option {
   transform: translate3d(0, 0, 0);
 }
 
+.slick-center {
+  transform: scaleY(1.1);
+  transition: all ease-in-out 0.3s;
+}
+
 .slick-track {
   position: relative;
   left: 0;
@@ -1097,6 +1150,9 @@ select option {
   height: 100%;
   min-height: 1px;
   display: none;
+}
+.slick-slide img {
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .slick-slide .project-content img {
@@ -1255,10 +1311,12 @@ select option {
 }
 .slick-dots li button {
   border: 0;
-  background: transparent;
+  background: #F08E2B;
+  opacity: 0.3;
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
   outline: none;
   line-height: 0px;
   font-size: 0px;
@@ -1267,6 +1325,8 @@ select option {
   cursor: pointer;
 }
 .slick-dots li button:hover, .slick-dots li button:focus {
+  background: #F08E2B;
+  opacity: unset;
   outline: none;
 }
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
