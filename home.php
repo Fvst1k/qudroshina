@@ -351,26 +351,34 @@ Template Name: home
             <button class="slick-prev slider-arrow-next"></button>
             <div class="reviews__slider">
                 <div class="reviews__slider-item">
+
                     <h3 class="reviews__name">Владимир</h3>
-                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но и
+                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
+                        и
                         предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
                         рекомендую!</p>
                 </div>
                 <div class="reviews__slider-item">
+
                     <h3 class="reviews__name">Владимир</h3>
-                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но и
+                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
+                        и
                         предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
                         рекомендую!</p>
                 </div>
                 <div class="reviews__slider-item">
+
                     <h3 class="reviews__name">Владимир</h3>
-                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но и
+                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
+                        и
                         предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
                         рекомендую!</p>
                 </div>
                 <div class="reviews__slider-item">
+
                     <h3 class="reviews__name">Владимир</h3>
-                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но и
+                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
+                        и
                         предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
                         рекомендую!</p>
                 </div>
@@ -378,6 +386,43 @@ Template Name: home
             </div>
         </div>
 
+    </div>
+</section>
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255808.70669704824!2d29.76506029963684!3d59.94034693347934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1697384424490!5m2!1sru!2sru"
+            width="100%" height="650px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contacts">
+    <div class="block__content block__content_contacts">
+        <h2 class="contacts__title">КОНТАКТЫ</h2>
+        <div class="contacts__grid">
+            <div class="contacts__grid-item contacts__grid-item_1">
+                <h3 class="contacts__item-1-title">Сеть шиномонтажных мастерских</h3>
+                <div class="contacts__item-1-info">
+                    <p class="contacts__info-first-address">
+                        Санкт-Петербург, Маршала Казакова 25А</p>
+                    <p>
+                        Санкт-Петербург, проспект Народного ополчения 16А</p>
+                    <a href="tel:+78129394647" class="contacts__phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M12.1492 4.44035C12.9909 4.60425 13.7644 5.01511 14.3708 5.62033C14.9772 6.22556 15.3888 6.99761 15.5531 7.83769M12.1492 1C13.8979 1.19389 15.5286 1.97549 16.7735 3.21645C18.0184 4.45741 18.8035 6.08398 19 7.82909M18.1383 14.6926V17.2728C18.1392 17.5124 18.0901 17.7495 17.9939 17.969C17.8978 18.1884 17.7568 18.3854 17.5799 18.5474C17.4031 18.7093 17.1943 18.8326 16.967 18.9093C16.7396 18.9861 16.4987 19.0146 16.2597 18.993C13.608 18.7054 11.0608 17.8011 8.82292 16.3526C6.74082 15.032 4.97557 13.2701 3.65252 11.192C2.19617 8.94824 1.28985 6.3936 1.00699 3.73508C0.98546 3.49723 1.01378 3.25752 1.09015 3.0312C1.16652 2.80488 1.28927 2.59691 1.45059 2.42054C1.6119 2.24416 1.80824 2.10324 2.02711 2.00675C2.24598 1.91026 2.48258 1.86031 2.72185 1.86009H5.30705C5.72525 1.85598 6.13069 2.00379 6.44778 2.27597C6.76487 2.54815 6.97198 2.92612 7.03051 3.33944C7.13963 4.16518 7.34199 4.97595 7.63373 5.75628C7.74967 6.06413 7.77476 6.39869 7.70603 6.72034C7.63731 7.04198 7.47764 7.33722 7.24595 7.57106L6.15155 8.66337C7.37827 10.8166 9.16456 12.5995 11.322 13.8239L12.4164 12.7316C12.6506 12.5003 12.9465 12.341 13.2687 12.2724C13.591 12.2038 13.9262 12.2288 14.2346 12.3445C15.0164 12.6357 15.8288 12.8377 16.6561 12.9466C17.0747 13.0055 17.457 13.216 17.7303 13.5379C18.0035 13.8598 18.1488 14.2708 18.1383 14.6926Z" stroke="#F08E2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        +7 (812) 939-46-47</a>
+                </div>
+
+            </div>
+            <div class="contacts__grid-item contacts__grid-item_2">
+                <h3 class="contacts__item-2-title">График работы:</h3>
+                <p>Пн–Пт с 9:00 до 18:00</p>
+            </div>
+            <div class="contacts__grid-item contacts__grid-item_3">
+                <h3 class="contacts__item-3-title">Мы в соцсетях:</h3>
+                <div class="contacts__item-3-socials">
+                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/vk.png" alt="VK"></a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
