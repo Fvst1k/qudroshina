@@ -194,6 +194,9 @@
   grid-area: 2 / 1 / 3 / 3;
   position: relative;
   z-index: 1000;
+  @include before-md{
+    margin: 0 auto;
+  }
   @include before-sm() {
     p {
       margin-bottom: 20px;
@@ -218,6 +221,9 @@
       left: -8%;
     }
   }
+  @include before-md{
+    margin: 0 auto;
+  }
 
 }
 
@@ -235,6 +241,9 @@
 
 .about-us__item_6 {
   grid-area: 5 / 2 / 6 / 4;
+  @include before-md{
+    margin: 0 auto;
+  }
 }
 
 .about-us__title {
@@ -275,6 +284,9 @@
     max-width: 390px;
     width: 100%;
   }
+  @include before-md() {
+    margin-bottom: 40px;
+  }
   @include before-sm() {
     max-width: 263px;
     width: 100%;
@@ -305,15 +317,41 @@
     position: relative;
     z-index: 100000;
   }
+  @include before-lg{
+    max-width: 500px;
+    width: 100%;
+  }
+  @include before-md{
+    max-width: 250px;
+    width: 100%;
+  }
 }
 
 .about-us__img_3 {
+
   position: relative;
   z-index: 100000;
-
   img {
     position: relative;
     z-index: 100000;
+  }
+  @include before-lg{
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    transform: translateY(-40%);
+    max-height: 280px;
+    height: 100%;
+  }
+  @include before-md{
+    max-height: 180px;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 260px;
+    width: 100%;
+  }
+  @include before-sm{
+
   }
 }
 
@@ -830,6 +868,8 @@ select{
 
 }
 .reviews__slider{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
 }

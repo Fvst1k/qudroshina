@@ -442,6 +442,11 @@ a {
   position: relative;
   z-index: 1000;
 }
+@media screen and (max-width: 767px) {
+  .about-us__item_2 {
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 575px) {
   .about-us__item_2 p {
     margin-bottom: 20px;
@@ -468,6 +473,11 @@ a {
     left: -8%;
   }
 }
+@media screen and (max-width: 767px) {
+  .about-us__item_3 {
+    margin: 0 auto;
+  }
+}
 
 .about-us__item_4 {
   grid-area: 3/1/6/2;
@@ -483,6 +493,11 @@ a {
 
 .about-us__item_6 {
   grid-area: 5/2/6/4;
+}
+@media screen and (max-width: 767px) {
+  .about-us__item_6 {
+    margin: 0 auto;
+  }
 }
 
 .about-us__title {
@@ -527,6 +542,11 @@ a {
     width: 100%;
   }
 }
+@media screen and (max-width: 767px) {
+  .about-us__img_1 {
+    margin-bottom: 40px;
+  }
+}
 @media screen and (max-width: 575px) {
   .about-us__img_1 {
     max-width: 263px;
@@ -555,6 +575,18 @@ a {
   position: relative;
   z-index: 100000;
 }
+@media screen and (max-width: 991px) {
+  .about-us__img_2 {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-us__img_2 {
+    max-width: 250px;
+    width: 100%;
+  }
+}
 
 .about-us__img_3 {
   position: relative;
@@ -564,7 +596,25 @@ a {
   position: relative;
   z-index: 100000;
 }
-
+@media screen and (max-width: 991px) {
+  .about-us__img_3 {
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    transform: translateY(-40%);
+    max-height: 280px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-us__img_3 {
+    max-height: 180px;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 260px;
+    width: 100%;
+  }
+}
 /*=================================================/ABOUT SECTION======================================================*/
 /*=================================================ADVANTAGES======================================================*/
 .advantages {
@@ -1076,6 +1126,8 @@ select option {
 }
 
 .reviews__slider {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
 }
