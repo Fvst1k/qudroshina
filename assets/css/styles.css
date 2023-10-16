@@ -1196,7 +1196,7 @@ select option {
 }
 
 /*=================================================/REVIEWS======================================================*/
-/*=================================================MAP======================================================*/
+/*=================================================CONTACTS======================================================*/
 .block__content_contacts {
   padding: 60px;
   background: #FFFFFF;
@@ -1210,13 +1210,32 @@ select option {
   font-size: 48px;
   text-align: center;
 }
+@media screen and (max-width: 575px) {
+  .contacts__title {
+    text-align: center;
+    font-size: 22px;
+  }
+}
 
 .contacts__grid {
   display: grid;
   grid-template-columns: 450px 200px 200px;
   grid-template-rows: 1fr;
-  grid-column-gap: 100px;
+  grid-column-gap: 20px;
   grid-row-gap: 0px;
+}
+@media screen and (max-width: 991px) {
+  .contacts__grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contacts__grid {
+    justify-items: start;
+    grid-row-gap: 20px;
+  }
 }
 
 .contacts__grid-item p, .contacts__grid-item a {
@@ -1240,6 +1259,12 @@ select option {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
+}
+@media screen and (max-width: 575px) {
+  .contacts__item-1-title {
+    text-align: center;
+    font-size: 18px;
+  }
 }
 
 .contacts__info-first-address:before {
@@ -1280,7 +1305,7 @@ select option {
   height: 19px;
 }
 
-/*=================================================/MAP======================================================*/
+/*=================================================/CONTACTS======================================================*/
 .footer {
   background: #232323;
   margin-top: auto;

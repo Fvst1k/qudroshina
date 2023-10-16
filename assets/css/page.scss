@@ -956,7 +956,7 @@ border-top: #FFFFFF;
 /*=================================================/REVIEWS======================================================*/
 
 
-/*=================================================MAP======================================================*/
+/*=================================================CONTACTS======================================================*/
 .block__content_contacts{
   padding: 60px;
   background: #FFFFFF;
@@ -968,15 +968,27 @@ border-top: #FFFFFF;
   font-family: "Prosto One";
   font-size: 48px;
   text-align: center;
+  @include before-sm(){
+    text-align: center;
+    font-size: 22px;
+  }
 }
 
 .contacts__grid{
   display: grid;
   grid-template-columns: 450px 200px 200px;
   grid-template-rows: 1fr;
-  grid-column-gap: 100px;
+  grid-column-gap: 20px;
   grid-row-gap: 0px;
-
+@include before-lg(){
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  grid-row-gap: 20px;
+}
+  @include before-lg(){
+    justify-items: start;
+    grid-row-gap: 20px;
+  }
 }
 
 .contacts__grid-item{
@@ -1010,6 +1022,10 @@ p,a{
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
+  @include before-sm(){
+    text-align: center;
+    font-size: 18px;
+  }
 }
 .contacts__info-first-address{
   &:before{
@@ -1029,6 +1045,7 @@ p,a{
     height: 19px;
     background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIiBmaWxsPSJub25lIj4KPHBhdGggZD0iTTEyLjE0OTIgNC40NDAzNUNxMi45OTA5IDQuNjA0MjUgMTMuNzY0NCA1LjAxNTExIDE0LjM3MDggNS42MjAzM0MxNC45NzcyIDYuMjI1NTYgMTUuMzg4OCA2Ljk5NzYxIDE1LjUzMDk3LjgzNzY5TTEyLjE0OTIgMUMxMy44OTc5IDEuMTkzODkgMTUuNTI4NiAxLjk3NTQ5IDE2Ljc3MzUgMy4yMTY0NUNxOC4wMTg0IDQuNDU3NDEgMTguODAzNSA2LjA4Mzk4IDE5IDcuODI5MDlNTEE4LjEzODMgMTQuNjkyNlYxNy4yNzI4QzE4LjEzOTIgMTcuNTEyNCAxOC4wOTAxIDE3Ljc0OTUgMTcuOTkzOSAxNy45NjkwQzE3Ljg5NzggMTguMTg4NCAxNy43NTY4IDE4LjM4NTQgMTcuNTc5OSAxOC41NDc0QzE3LjQwMzEgMTguNzA5MyAxNy4xOTQzIDE4LjgzMjYgMTYuOTY3IDE4LjkwOTMQMTYuNzM5NiAxOC45ODYxIDE2LjQ5ODcgMTkuMDE0NiAxNi4yNTk3IDE4Ljk5M0MxMy42MDggMTguNzA1NCAxMS4wNjA4IDE3LjgwMTEgOC44MjI5MiAxNi4zNTI2QzYuNzQwODIgMTUuMDMyIDQuOTc1NTcgMTMuMjcwMSAzLjY1MjUyIDExLjE5MkMyLjE5NjE3IDguOTQ4MjQgMS4yODk4NSA2LjM5MzYgMS4wMDY5OSAzLjczNTA4QzAuOTg1NDYgMy40OTcyMyAxLjAxMzc3IDMuMjU3NTIgMS4wOTAxNSAzLjAzMTJDMS4xNjY1MiAyLjgwNDg4IDEuMjg5MjcgMi41OTY5MSAxLjQ1MDU5IDIuNDIwNTRDMTIuNjExOSAyLjI0NDE2IDEuODA4MjQgMi4xMDMyNCAyLjAyNzExIDIuMDA2NzVDMi4yNDU5OCAxLjkxMDI3IDIuNDgyNTggMS44NjAzMSAyLjcyMTg1IDEuODYwMDlINy4zMDcwNUM1LjcyNTI1IDEuODU1OTggNi4xMzA2OSAyLjAwMzc5IDYuNDQ3NzggMi4yNzU5N0M2Ljc2NDg3IDIuNTQ4MTUgNi45NzE5OCAyLjkyNjEyIDcuMDMwNTEgMy4zMzk0NEM3LjEzOTYzIDQuMTY1MTggNy4zNDE5OSA0Ljk3NTk1IDcuNjMzNzMgNS43NTYyOEM3Ljc0OTY3IDYuMDY0MTMgNy43NzQ3NiA2LjM5ODY5IDcuNzA2MDMgNi43MjAzNEM3LjYzNzMxIDcuMDQxOTggNy40NzY0NCA3LjMzNzIyIDcuMjQ1OTUgNy41NzEwNkw2LjE1MTU1IDguNjYzMzdDNy4zNzgyNyAxMC44MTY2IDkuMTY0NTYgMTIuNTk5NSAxMS4zMjIgMTMuODIzOUwxMi40MTY0IDEyLjczMTZDMTIuNjUwNiAxMi41MDAzIDEyLjk0NjUgMTIuMzQxIDMuMjY4NyAxMi4yNzI0QzEzLjU5MSAxMi4yMDM4IDEzLjkyNjIgMTIuMjI4OCAxNC4yMzQ2IDEyLjM0NDVDMTUuMDE2NCAxMi42MzU3IDE1LjgyODggMTIuODM3NyAxNi42NTYxIDEyLjk0NjZDMTcuMDc0NyAxMy4wMDU1IDE3LjQ1NyAxMy4yMTYgMTcuNzMwMyAxMy41Mzc5QzE4LjAwMzUgMTMuODU5OCAxOC4xNDg4IDE0LjI3MDggMTguMTM4MyAxNC42OTI2WiIgc3Ryb2tlPSIjRjA4RTJCIiBzdHJva2Utd3lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=");
   }
+
 }
 }
 .contacts__item-2-title{
@@ -1065,4 +1082,4 @@ p,a{
 
 
 
-/*=================================================/MAP======================================================*/
+/*=================================================/CONTACTS======================================================*/
