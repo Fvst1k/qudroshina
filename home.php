@@ -113,31 +113,33 @@ Template Name: home
 </section>
 <section class="booking">
     <div class="block__content block__content_booking">
-        <div class="booking__card">
-            <div class="booking__card-info">
-                <h2 class="booking__card-title">ЗАПИСЬ ПО ТЕЛЕФОНУ</h2>
-                <p class="booking__card-text">Чтобы вам не пришлось стоять в очереди в пик сезона запишитесь заранее по
-                    круглосуточному номеру</p>
-                <div class="booking__phone-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" viewBox="0 0 38 29" fill="none">
-                        <path d="M2 27L10.5353 15.9042C11.3914 14.7912 11.361 13.2332 10.4621 12.1545L2 2"
-                              stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17 24L23.5353 15.5042C24.3914 14.3912 24.361 12.8332 23.4621 11.7545L17 4"
-                              stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M31 22L35.5353 16.1042C36.3914 14.9912 36.361 13.4332 35.4621 12.3545L31 7"
-                              stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <a href="tel:+78129394647" class="booking__phone">+7 (812) 939-46-47</a>
+        <div class="booking__card-wrapper">
+            <div class="booking__card">
+                <div class="booking__card-info">
+                    <h2 class="booking__card-title">ЗАПИСЬ ПО ТЕЛЕФОНУ</h2>
+                    <p class="booking__card-text">Чтобы вам не пришлось стоять в очереди в пик сезона запишитесь заранее по
+                        круглосуточному номеру</p>
+                    <div class="booking__phone-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" viewBox="0 0 38 29" fill="none">
+                            <path d="M2 27L10.5353 15.9042C11.3914 14.7912 11.361 13.2332 10.4621 12.1545L2 2"
+                                  stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 24L23.5353 15.5042C24.3914 14.3912 24.361 12.8332 23.4621 11.7545L17 4"
+                                  stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31 22L35.5353 16.1042C36.3914 14.9912 36.361 13.4332 35.4621 12.3545L31 7"
+                                  stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <a href="tel:+78129394647" class="booking__phone">+7 (812) 939-46-47</a>
+                    </div>
+                </div>
+                <div class="booking__img_1">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/wheels.png" alt="wheels">
+                </div>
+                <div class="booking__tread-img">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/tread-booking.png" alt="wheels">
                 </div>
             </div>
-            <div class="booking__img">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/wheels.png" alt="wheels">
-            </div>
-            <div class="booking__tread-img">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/tread-booking.png" alt="wheels">
-            </div>
-
         </div>
+
     </div>
 </section>
 <section class="price-table">
@@ -268,51 +270,109 @@ Template Name: home
         <p class="calculation__subtitle">С помощью калькулятора вы заранее можете рассчитать стоимость шиномонтажных
             работ</p>
         <div class="calculation__calculator">
-            <div class="calculation__calculator-type">
-                <p class="calculation__option-name">Тип шины</p>
-                <select name="passenger-car" id="passenger-car">
-                    <option value="car">легковой</option>
-                    <option value="car">легковой</option>
-                    <option value="car">легковой</option>
-                    <option value="car">легковой</option>
-                </select>
+            <div class="calculation__select calculation__select_1 ">
+                <h3 class="calculation__select-title">Тип шины</h3>
+                <div class="calculation__select-header">
+                    <span class="calculation__select-current">легковой</span>
+                    <div class="calculation__select-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></div>
+                </div>
+
+                <div class="calculation__select-body">
+                    <div class="calculation__select-item">легковой</div>
+                    <div class="calculation__select-item">грузовой</div>
+                    <div class="calculation__select-item">сверхгругозовой</div>
+                    <div class="calculation__select-item">сверхлегковой</div>
+                </div>
             </div>
-            <div class="calculation__calculator-diameter">
-                <p class="calculation__option-name">Диаметр</p>
-                <select name="diameter" id="diameter">
-                    <option value="car">R14</option>
-                    <option value="car">R15</option>
-                    <option value="car">R16</option>
-                    <option value="car">R17</option>
-                </select>
+            <div class="calculation__select calculation__select_2">
+                <h3 class="calculation__select-title">Диаметр</h3>
+                <div class="calculation__select-header">
+                    <span class="calculation__select-current">R14</span>
+                    <div class="calculation__select-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></div>
+                </div>
+
+                <div class="calculation__select-body">
+                    <div class="calculation__select-item">R14</div>
+                    <div class="calculation__select-item">R15</div>
+                    <div class="calculation__select-item">R16</div>
+                    <div class="calculation__select-item">R17</div>
+                </div>
             </div>
-            <div class="calculation__calculator-address">
-                <p class="calculation__option-name">Выберите сервисный центр</p>
-                <select name="address" id="address">
-                    <option value="car">Маршала Казакова 25А</option>
-                    <option value="car">Маршала Казакова 25А</option>
-                    <option value="car">Маршала Казакова 25А</option>
-                    <option value="car">Маршала Казакова 25А</option>
-                </select>
+            <div class="calculation__select calculation__select_3 ">
+                <h3 class="calculation__select-title">Выберите сервисный центр</h3>
+                <div class="calculation__select-header">
+                    <span class="calculation__select-current">Маршала Казакова 25А</span>
+                    <div class="calculation__select-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></div>
+                </div>
+
+                <div class="calculation__select-body">
+                    <div class="calculation__select-item">Маршала Казакова 25А</div>
+                    <div class="calculation__select-item">Маршала Казакова 25А</div>
+                    <div class="calculation__select-item">Маршала Казакова 25А</div>
+                    <div class="calculation__select-item">Маршала Казакова 25А</div>
+                </div>
             </div>
-            <div class="calculation__calculator-work-type">
-                <p class="calculation__option-name">Тип работ</p>
-                <select name="work-type" id="work-type">
-                    <option value="car">Полный переобув</option>
-                    <option value="car">Полный переобув</option>
-                    <option value="car">Полный переобув</option>
-                    <option value="car">Полный переобув</option>
-                </select>
-            </div>
-            <div class="calculation__calculator-checkbox">
+            <div class="calculation__select calculation__select_4 ">
+                <h3 class="calculation__select-title calculation__select-title_4">Тип работ</h3>
+                <div class="calculation__select-header">
+                    <span class="calculation__select-current">Полный переобув</span>
+                    <div class="calculation__select-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></div>
+                </div>
+                <div class="calculation__select-body">
+                    <div class="calculation__select-item">Полный переобув</div>
+                    <div class="calculation__select-item">Полный переобув</div>
+                    <div class="calculation__select-item">Полный переобув</div>
+                    <div class="calculation__select-item">Полный переобув</div>
+                </div>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
-                    <span>Checkbox #2</span>
+                    <input type="checkbox" >
+                    <span>Балансировка</span>
                 </label>
             </div>
+            <div class="calculation__select calculation__select_5">
+                <div class="form_radio_btn">
+                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                    <label for="radio-1">1</label>
+                </div>
 
+                <div class="form_radio_btn">
+                    <input id="radio-2" type="radio" name="radio" value="2">
+                    <label for="radio-2">2</label>
+                </div>
 
+                <div class="form_radio_btn">
+                    <input id="radio-3" type="radio" name="radio" value="3">
+                    <label for="radio-3">3</label>
+                </div>
+                <div class="form_radio_btn">
+                    <input id="radio-4" type="radio" name="radio" value="4">
+                    <label for="radio-4">4</label>
+                </div>
+            </div>
+            <div class="calculation__result">
+                <p class="calculation__result_text">Стоимость услуг:</p>
+                <p class="calculation__result_number">3500<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_1_1626)">
+                            <path d="M11.4277 11.1112C12.6376 11.1411 13.81 10.69 14.6879 9.85693C15.5658 9.02381 16.0775 7.87661 16.111 6.66679C16.0775 5.45696 15.5658 4.30976 14.6879 3.47664C13.81 2.64353 12.6376 2.19247 11.4277 2.22234H6.66656C6.51922 2.22234 6.37791 2.28087 6.27372 2.38506C6.16953 2.48925 6.111 2.63056 6.111 2.7779V10.0001H4.99989C4.85255 10.0001 4.71124 10.0587 4.60705 10.1628C4.50287 10.267 4.44434 10.4083 4.44434 10.5557C4.44434 10.703 4.50287 10.8443 4.60705 10.9485C4.71124 11.0527 4.85255 11.1112 4.99989 11.1112H6.111V12.2223H4.99989C4.85255 12.2223 4.71124 12.2809 4.60705 12.3851C4.50287 12.4892 4.44434 12.6306 4.44434 12.7779C4.44434 12.9252 4.50287 13.0665 4.60705 13.1707C4.71124 13.2749 4.85255 13.3335 4.99989 13.3335H6.111V17.2223C6.111 17.3697 6.16953 17.511 6.27372 17.6152C6.37791 17.7194 6.51922 17.7779 6.66656 17.7779C6.8139 17.7779 6.95521 17.7194 7.05939 17.6152C7.16358 17.511 7.22211 17.3697 7.22211 17.2223V13.3335H12.2221C12.3695 13.3335 12.5108 13.2749 12.615 13.1707C12.7191 13.0665 12.7777 12.9252 12.7777 12.7779C12.7777 12.6306 12.7191 12.4892 12.615 12.3851C12.5108 12.2809 12.3695 12.2223 12.2221 12.2223H7.22211V11.1112H11.4277ZM7.22211 3.33345H11.4277C12.3426 3.30492 13.2316 3.63938 13.9008 4.26385C14.57 4.88832 14.9651 5.75212 14.9999 6.66679C14.9666 7.58195 14.5719 8.44662 13.9024 9.07139C13.2328 9.69617 12.3429 10.0301 11.4277 10.0001H7.22211V3.33345Z" fill="#171717"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_1626">
+                                <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg></p>
+            </div>
+            <div class="calculation__result-btn"><p>Полный расчёт</p></div>
         </div>
+
 
     </div>
 </section>
@@ -351,7 +411,6 @@ Template Name: home
             <button class="slick-prev slider-arrow-next"></button>
             <div class="reviews__slider">
                 <div class="reviews__slider-item">
-
                     <h3 class="reviews__name">Владимир</h3>
                     <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
                         и
