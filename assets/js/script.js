@@ -55,3 +55,24 @@ $(document).ready(function () {
     });
 });
 
+let select = function (){
+let selectHeader = document.querySelectorAll('.calculation__select-header');
+let selectItem = document.querySelectorAll('.calculation__select-item');
+    selectHeader.forEach(item =>{
+        item.addEventListener('click', selectToggle)
+    });
+    selectItem.forEach(item =>{
+        item.addEventListener('click', selectChoose)
+    })
+    function selectToggle (){
+        this.parentElement.classList.toggle('select-active');
+    }
+    function selectChoose(){
+     let text = this.innerText;
+     let select = this.closest('.calculation__select');
+     let currentText = select.querySelector('.calculation__select-current');
+     currentText.innerText = text;
+     select.classList.remove('select-active');
+    }
+};
+select();
