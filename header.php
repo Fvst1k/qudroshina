@@ -28,8 +28,8 @@ Template Name: header
 <body>
 <div class="wrapper">
     <!-- Header -->
-    <header>
-        <div class="block__content">
+    <header class="header">
+        <div class="block__content block__content_header">
             <div class="header__row">
                 <div class="header__logo hover_scale">
                     <?php the_custom_logo(); ?>

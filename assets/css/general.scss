@@ -32,6 +32,30 @@ a {
   position: relative;
   overflow: hidden;
 }
+.wrapper__protector-bg {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+}
+.wrapper__protector-bg_img {
+  width: 100%;
+  position: absolute;
+  top: -6%;
+  left: -50%;
+  transform: translateX(50%);
+  z-index: 1;
+  img {
+    width: 100%;
+    max-height: 3250px;
+  }
+}
+.wrapper__protector-bg_img-2 {
+  top: 35%;
+}
 
 .block__content {
   margin: 0 auto;
@@ -40,6 +64,8 @@ a {
   padding: 0 20px;
   display: flex;
   flex-flow: column;
+  position: relative;
+  z-index: 10;
   @include inner-container();
   @include before-md() {
     padding: 0 10px;
@@ -58,6 +84,7 @@ a {
 }
 
 .block__content {
+
 
 }
 

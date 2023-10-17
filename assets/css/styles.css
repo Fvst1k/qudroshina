@@ -121,6 +121,32 @@ a {
   overflow: hidden;
 }
 
+.wrapper__protector-bg {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper__protector-bg_img {
+  width: 100%;
+  position: absolute;
+  top: -6%;
+  left: -50%;
+  transform: translateX(50%);
+  z-index: 1;
+}
+.wrapper__protector-bg_img img {
+  width: 100%;
+  max-height: 3250px;
+}
+
+.wrapper__protector-bg_img-2 {
+  top: 35%;
+}
+
 .block__content {
   margin: 0 auto;
   max-width: 1200px;
@@ -128,6 +154,8 @@ a {
   padding: 0 20px;
   display: flex;
   flex-flow: column;
+  position: relative;
+  z-index: 10;
   width: 100%;
   margin: 0 auto;
 }
@@ -187,6 +215,14 @@ a {
   transform: scale(1.02);
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+}
+
 .header__row {
   display: flex;
   align-items: center;
@@ -197,15 +233,24 @@ a {
 
 .header__menu {
   padding: 0 10px;
+  max-width: 600px;
 }
-.header__menu a {
-  font-weight: 600;
+.header__menu .menu {
+  display: flex;
+  align-items: center;
 }
 .header__menu li {
   transition: ease-in-out all 0.3s;
+  padding: 0 50px 0 0;
+}
+.header__menu li:last-child {
+  padding: 0;
 }
 .header__menu li:hover {
   transform: scale(1.02);
+}
+.header__menu a {
+  font-weight: 600;
 }
 
 .header__links-row {
@@ -215,7 +260,7 @@ a {
   max-width: 288px;
   width: 100%;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.41);
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
   padding: 20px 13px;
 }
@@ -246,6 +291,19 @@ a {
   background: url("../../assets/img/hero-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero-bg img {
+  height: 100%;
+  width: 1480px;
+  max-width: unset;
 }
 
 .block__content_hero {
@@ -325,7 +383,6 @@ a {
   margin-bottom: 28px;
   max-width: 450px;
   width: 100%;
-  font-family: Raleway;
   font-size: 24px;
   line-height: 1.4;
 }
@@ -344,7 +401,6 @@ a {
   border-radius: 8px;
   background: #F08E2B;
   color: #FFF;
-  font-family: Raleway;
   font-weight: 700;
   transition: all ease-in-out 0.4s;
 }
@@ -421,10 +477,13 @@ a {
   }
 }
 
+.about-us__item {
+  position: relative;
+  z-index: 10;
+}
+
 .about-us__item_1 {
   grid-area: 1/1/2/3;
-  position: relative;
-  z-index: 1000;
 }
 @media screen and (max-width: 991px) {
   .about-us__item_1 .about-us__title {
@@ -439,8 +498,6 @@ a {
 
 .about-us__item_2 {
   grid-area: 2/1/3/3;
-  position: relative;
-  z-index: 1000;
 }
 @media screen and (max-width: 767px) {
   .about-us__item_2 {
@@ -481,14 +538,10 @@ a {
 
 .about-us__item_4 {
   grid-area: 3/1/6/2;
-  position: relative;
-  z-index: 1000;
 }
 
 .about-us__item_5 {
   grid-area: 3/2/5/3;
-  position: relative;
-  z-index: 1000;
 }
 
 .about-us__item_6 {
@@ -527,7 +580,6 @@ a {
 
 .about-us__img {
   position: relative;
-  z-index: 100000;
 }
 
 .about-us__img_1 {
@@ -568,12 +620,10 @@ a {
 .about-us__img_2 {
   margin-right: 25px;
   position: relative;
-  z-index: 200000;
 }
 .about-us__img_2 img {
   width: 100%;
   position: relative;
-  z-index: 100000;
 }
 @media screen and (max-width: 991px) {
   .about-us__img_2 {
@@ -590,11 +640,9 @@ a {
 
 .about-us__img_3 {
   position: relative;
-  z-index: 100000;
 }
 .about-us__img_3 img {
   position: relative;
-  z-index: 100000;
 }
 @media screen and (max-width: 991px) {
   .about-us__img_3 {
@@ -690,7 +738,6 @@ a {
   max-width: 200px;
   width: 100%;
   margin-bottom: 15px;
-  font-family: Raleway;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
@@ -702,7 +749,6 @@ a {
 }
 
 .advantages__item-text {
-  font-family: Raleway;
   line-height: 1.2;
 }
 
@@ -722,12 +768,27 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 0 20px;
+  padding: 30px 30px 0 0;
+}
+
+.booking__img-wheels {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}
+@media screen and (max-width: 991px) {
+  .booking__img-wheels {
+    top: unset;
+    right: unset;
+    left: 20px;
+    bottom: -50px;
+    max-width: 237px;
+  }
 }
 
 .booking__img {
   position: absolute;
-  z-index: 100000;
   margin-top: -20px;
   margin-right: -15px;
   right: 0;
@@ -746,25 +807,28 @@ a {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  padding: 0 0 10px 50px;
+  padding: 80px 500px 80px 50px;
   border-radius: 5px;
-  box-shadow: 4px 4px 20px 0px rgba(77, 77, 77, 0.34);
+  box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
   background: url("../../assets/img/hero-background.png"), lightgray 50%/cover no-repeat;
 }
 @media screen and (max-width: 991px) {
   .booking__card {
-    flex-wrap: wrap;
+    width: 100%;
+    padding: 35px 35px 160px 35px;
   }
 }
 
+.booking__card-info {
+  position: relative;
+}
 .booking__card-info svg {
   margin-right: 20px;
 }
 
 .booking__card-title {
-  margin-top: 70px;
   margin-bottom: 20px;
-  font-family: "Prosto One";
+  font-family: "Prosto One", sans-serif;
   font-size: 48px;
   line-height: 1.2;
   white-space: nowrap;
@@ -789,7 +853,6 @@ a {
   margin-bottom: 40px;
   max-width: 515px;
   width: 100%;
-  font-family: Raleway;
   line-height: 1.6;
 }
 @media screen and (max-width: 1112px) {
@@ -808,7 +871,7 @@ a {
 .booking__phone {
   color: #E78B2F;
   font-variant-numeric: lining-nums proportional-nums;
-  font-family: "Prosto One";
+  font-family: "Prosto One", sans-serif;
   font-size: 24px;
   line-height: 1.2;
 }
@@ -820,13 +883,15 @@ a {
   bottom: 0;
 }
 .booking__tread-img img {
-  height: 420px;
+  height: 100%;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 575px) {
   .booking__tread-img {
     top: unset;
-    right: 0;
     bottom: 0;
+    right: -90px;
+    max-width: 296px;
+    max-height: 394px;
   }
 }
 
@@ -887,7 +952,6 @@ a {
 }
 .price-table .price-table__th-style {
   text-align: start;
-  font-family: Raleway;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
@@ -912,14 +976,12 @@ a {
   height: 86px;
 }
 .price-table .price-table__table-row-7-style {
-  font-family: Raleway;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
 }
 .price-table .price-table__table-col-1 {
   width: 300px;
-  font-family: Raleway;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
@@ -942,7 +1004,6 @@ table.price-table__table td, table.price-table__table th {
 }
 
 .price-table__table-service_7 {
-  font-family: Raleway;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -972,6 +1033,12 @@ table.price-table__table td, table.price-table__table th {
   line-height: 1.4;
 }
 
+.calculation__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .calculation__calculator {
   max-width: 505px;
   display: flex;
@@ -981,8 +1048,14 @@ table.price-table__table td, table.price-table__table th {
   padding: 40px 30px;
   border-radius: 5px;
   border: 1px solid rgba(209, 209, 209, 0.3);
-  background: #FFF;
-  box-shadow: 4px 4px 20px 0px rgba(77, 77, 77, 0.34);
+  background: #FFFFFF;
+  opacity: 1;
+  box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
+  margin: 0 15px 0 0;
+}
+
+.calculation__img {
+  max-width: 724px;
 }
 
 .calculation__select {
@@ -993,7 +1066,6 @@ table.price-table__table td, table.price-table__table th {
   stroke: #F08E2B;
 }
 .calculation__select .calculation__select-title {
-  font-family: Raleway;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 10px;
@@ -1004,7 +1076,6 @@ table.price-table__table td, table.price-table__table th {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  font-family: Raleway;
   font-weight: 500;
   line-height: 1.2;
   border-radius: 5px;
@@ -1013,7 +1084,6 @@ table.price-table__table td, table.price-table__table th {
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.02) inset;
 }
 .calculation__select .calculation__select-current {
-  font-family: Raleway;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -1028,18 +1098,16 @@ table.price-table__table td, table.price-table__table th {
   position: absolute;
   padding: 15px;
   display: none;
-  z-index: 100000;
+  z-index: 20;
   left: 0;
   right: 0;
   top: 115%;
   border-radius: 5px;
   border: 0.5px solid #D1D1D1;
   background: #FFF;
-  font-family: Raleway;
   line-height: 1.2;
 }
 .calculation__select .calculation__select-item {
-  font-family: Raleway;
   padding: 8px;
   cursor: pointer;
   line-height: 1.2;
@@ -1195,7 +1263,6 @@ table.price-table__table td, table.price-table__table th {
   display: flex;
   align-items: center;
   margin-right: 20px;
-  font-family: Raleway;
   font-size: 24px;
   line-height: 1.2;
 }
@@ -1214,7 +1281,6 @@ table.price-table__table td, table.price-table__table th {
 .calculation__result-btn p {
   text-align: center;
   color: #FFF;
-  font-family: Raleway;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -1225,16 +1291,19 @@ table.price-table__table td, table.price-table__table th {
   margin-bottom: 80px;
 }
 
+.employees__slider .slick-dots li button:before {
+  content: "";
+}
+
 .employees__title {
   margin-bottom: 18px;
-  font-family: "Prosto One";
+  font-family: "Prosto One", sans-serif;
   font-size: 48px;
   line-height: 1.2;
 }
 
 .employees__subtitle {
   margin-bottom: 50px;
-  font-family: Raleway;
   font-size: 24px;
   line-height: 1.2;
 }
@@ -1277,6 +1346,7 @@ table.price-table__table td, table.price-table__table th {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0 80px 0;
+  position: relative;
 }
 
 .block__content_reviews {
@@ -1292,7 +1362,8 @@ table.price-table__table td, table.price-table__table th {
 }
 
 .reviews__slider-wrapper {
-  padding: 0 100px 0 100px;
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   position: relative;
 }
@@ -1303,30 +1374,38 @@ table.price-table__table td, table.price-table__table th {
   justify-content: center;
   overflow: hidden;
 }
-
-.slider-arrow-next {
+.reviews__slider .slick-slide {
+  opacity: 0;
+}
+.reviews__slider .slick-active {
+  opacity: 1;
+}
+.reviews__slider .slick-track {
+  overflow: visible;
+}
+.reviews__slider .slick-list {
+  overflow: visible;
+  padding: 0 130px;
+}
+.reviews__slider .slider-arrow-next {
   position: absolute;
   right: 0;
   top: 50%;
-  z-index: 1000000000000000;
   width: unset !important;
 }
-.slider-arrow-next svg:hover path {
+.reviews__slider .slider-arrow-next svg:hover path {
   stroke: #D1D1D1;
 }
-
-.slider-arrow-prev {
+.reviews__slider .slider-arrow-prev {
   position: absolute;
   left: 0;
   top: 50%;
   width: unset !important;
-  z-index: 1000000000000000;
 }
-.slider-arrow-prev svg:hover path {
+.reviews__slider .slider-arrow-prev svg:hover path {
   stroke: #D1D1D1;
 }
-
-.reviews__slider-item {
+.reviews__slider .reviews__slider-item {
   border-radius: 10px;
   max-width: 490px;
   width: 100%;
@@ -1336,25 +1415,25 @@ table.price-table__table td, table.price-table__table th {
   margin-right: 60px;
   position: relative;
   border-top: #FFFFFF;
+  background-clip: padding-box;
 }
-.reviews__slider-item iframe {
+.reviews__slider .reviews__slider-item iframe {
   width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 767px) {
-  .reviews__slider-item {
+  .reviews__slider .reviews__slider-item {
     width: 500px;
   }
 }
 @media screen and (max-width: 575px) {
-  .reviews__slider-item {
+  .reviews__slider .reviews__slider-item {
     width: 299px;
   }
 }
 
 .reviews__name {
   margin-bottom: 17px;
-  font-family: Raleway;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
@@ -1363,7 +1442,6 @@ table.price-table__table td, table.price-table__table th {
 
 .reviews__feedback {
   text-align: center;
-  font-family: Raleway;
   line-height: 1.2;
 }
 
@@ -1411,13 +1489,11 @@ table.price-table__table td, table.price-table__table th {
 }
 
 .contacts__grid-item p, .contacts__grid-item a {
-  font-family: Raleway;
   line-height: 1.2;
   margin-bottom: 12px;
 }
 .contacts__grid-item .contacts__grid-item_2 p {
   color: #323232;
-  font-family: Raleway;
   line-height: 1.2;
 }
 .contacts__grid-item .contacts__item-1-info svg {
@@ -1427,7 +1503,6 @@ table.price-table__table td, table.price-table__table th {
 
 .contacts__item-1-title {
   margin-bottom: 20px;
-  font-family: Raleway;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
@@ -1457,7 +1532,6 @@ table.price-table__table td, table.price-table__table th {
 }
 
 .contacts__item-2-title {
-  font-family: Raleway;
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 500;
@@ -1466,7 +1540,6 @@ table.price-table__table td, table.price-table__table th {
 
 .contacts__item-3-title {
   margin-bottom: 20px;
-  font-family: Raleway;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;

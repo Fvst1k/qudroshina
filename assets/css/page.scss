@@ -3,7 +3,22 @@
   background: url('../../assets/img/hero-background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  img {
+    height: 100%;
+    width: 1480px;
+    max-width: unset;
+
+  }
 }
 
 .block__content_hero {
@@ -77,7 +92,7 @@
   margin-bottom: 28px;
   max-width: 450px;
   width: 100%;
-  font-family: Raleway;
+
   font-size: 24px;
   line-height: 1.4;
   @include before-md() {
@@ -94,7 +109,7 @@
   border-radius: 8px;
   background: #F08E2B;
   color: #FFF;
-  font-family: Raleway;
+
   font-weight: 700;
   transition: all ease-in-out 0.4s;
 
@@ -173,10 +188,14 @@
   }
 }
 
+.about-us__item {
+  position: relative;
+  z-index: 10;
+}
+
 .about-us__item_1 {
   grid-area: 1 / 1 / 2 / 3;
-  position: relative;
-  z-index: 1000;
+
   @include before-lg() {
     .about-us__title {
       font-size: 35px;
@@ -192,9 +211,8 @@
 
 .about-us__item_2 {
   grid-area: 2 / 1 / 3 / 3;
-  position: relative;
-  z-index: 1000;
-  @include before-md{
+
+  @include before-md {
     margin: 0 auto;
   }
   @include before-sm() {
@@ -221,7 +239,7 @@
       left: -8%;
     }
   }
-  @include before-md{
+  @include before-md {
     margin: 0 auto;
   }
 
@@ -229,19 +247,17 @@
 
 .about-us__item_4 {
   grid-area: 3 / 1 / 6 / 2;
-  position: relative;
-  z-index: 1000;
+
 }
 
 .about-us__item_5 {
   grid-area: 3 / 2 / 5 / 3;
-  position: relative;
-  z-index: 1000;
+
 }
 
 .about-us__item_6 {
   grid-area: 5 / 2 / 6 / 4;
-  @include before-md{
+  @include before-md {
     margin: 0 auto;
   }
 }
@@ -272,7 +288,7 @@
 
 .about-us__img {
   position: relative;
-  z-index: 100000;
+
 }
 
 .about-us__img_1 {
@@ -310,18 +326,19 @@
 .about-us__img_2 {
   margin-right: 25px;
   position: relative;
-  z-index: 200000;
+
 
   img {
     width: 100%;
     position: relative;
-    z-index: 100000;
+
   }
-  @include before-lg{
+
+  @include before-lg {
     max-width: 500px;
     width: 100%;
   }
-  @include before-md{
+  @include before-md {
     max-width: 250px;
     width: 100%;
   }
@@ -330,12 +347,13 @@
 .about-us__img_3 {
 
   position: relative;
-  z-index: 100000;
+
   img {
     position: relative;
-    z-index: 100000;
+
   }
-  @include before-lg{
+
+  @include before-lg {
     max-width: 400px;
     width: 100%;
     margin-left: auto;
@@ -343,14 +361,14 @@
     max-height: 280px;
     height: 100%;
   }
-  @include before-md{
+  @include before-md {
     max-height: 180px;
     height: 100%;
     margin: 0 auto;
     max-width: 260px;
     width: 100%;
   }
-  @include before-sm{
+  @include before-sm {
 
   }
 }
@@ -427,7 +445,7 @@
   max-width: 200px;
   width: 100%;
   margin-bottom: 15px;
-  font-family: Raleway;
+
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
@@ -439,7 +457,7 @@
 
 .advantages__item-text {
 
-  font-family: Raleway;
+
   line-height: 1.2;
 }
 
@@ -457,15 +475,35 @@
   max-width: 1300px;
   width: 100%;
 }
-.booking__card-wrapper{
+
+.booking__card-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 0 20px;
+  padding: 30px 30px 0 0;
 }
+
+.booking__img-wheels {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  @include before-lg() {
+    top: unset;
+    right: unset;
+    left: 20px;
+    bottom: -50px;
+    max-width: 237px;
+
+
+
+  }
+
+}
+
 .booking__img {
   position: absolute;
-  z-index: 100000;
+
   margin-top: -20px;
   margin-right: -15px;
   right: 0;
@@ -473,7 +511,7 @@
     margin-top: 20px;
     margin-right: 0;
     bottom: 0;
-  transform: translate(-20%,20%);
+    transform: translate(-20%, 20%);
   }
 }
 
@@ -483,33 +521,35 @@
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  padding: 0 0 10px 50px;
+  padding: 80px 500px 80px 50px;
   border-radius: 5px;
-  box-shadow: 4px 4px 20px 0px rgba(77, 77, 77, 0.34);
+  box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
   background: url('../../assets/img/hero-background.png'), lightgray 50% / cover no-repeat;
-
   @include before-lg() {
-    flex-wrap: wrap;
+    width: 100%;
+    padding: 35px 35px 160px 35px;
+
+
   }
 }
 
 .booking__card-info {
+  position: relative;
   svg {
     margin-right: 20px;
   }
 }
 
 .booking__card-title {
-  margin-top: 70px;
   margin-bottom: 20px;
-  font-family: "Prosto One";
+  font-family: "Prosto One", sans-serif;
   font-size: 48px;
   line-height: 1.2;
   white-space: nowrap;
-  @media screen and (max-width: 1260px){
+  @media screen and (max-width: 1260px) {
     font-size: 45px;
   }
-  @media screen and (max-width: 1220px){
+  @media screen and (max-width: 1220px) {
     font-size: 43px;
   }
   @include before-xl() {
@@ -522,9 +562,9 @@
   margin-bottom: 40px;
   max-width: 515px;
   width: 100%;
-  font-family: Raleway;
+
   line-height: 1.6;
-  @media screen and (max-width: 1112px){
+  @media screen and (max-width: 1112px) {
     max-width: 450px;
     width: 100%;
   }
@@ -539,7 +579,7 @@
 .booking__phone {
   color: #E78B2F;
   font-variant-numeric: lining-nums proportional-nums;
-  font-family: "Prosto One";
+  font-family: "Prosto One", sans-serif;
   font-size: 24px;
   line-height: 1.2;
 }
@@ -549,27 +589,39 @@
   top: 0;
   right: 0;
   bottom: 0;
- img{
-   height: 420px;
- }
-  @include before-lg() {
-    top: unset;
-    right: 0;
-    bottom: 0;
+
+  img {
+    height: 100%;
   }
+
+  @include before-lg() {
+
+  }
+  @include before-sm() {
+    top: unset;
+    bottom: 0;
+    right: -90px;
+    max-width: 296px;
+    max-height: 394px ;
+
+
+  }
+
 }
 
 /*=================================================/BOOKING======================================================*/
 
 
 /*=================================================PRICE-TABLE======================================================*/
-.price-table{
+.price-table {
   background: rgba(255, 255, 255, 0.20);
 }
-.block__content_price-table{
+
+.block__content_price-table {
   max-width: 1300px;
   width: 100%;
 }
+
 .price-table__title {
   margin-bottom: 5px;
   font-family: "Prosto One";
@@ -587,23 +639,26 @@
   margin-top: 60px;
   border-radius: 20px;
   overflow-x: scroll;
-  &::-webkit-scrollbar{
-    display: none;
-  }
-  @include before-lg(){
-    overflow-x: scroll;
-  }
-@include before-md(){
-  -webkit-overflow-scrolling: touch;
-  &::-webkit-scrollbar{
+
+  &::-webkit-scrollbar {
     display: none;
   }
 
-}
+  @include before-lg() {
+    overflow-x: scroll;
+  }
+  @include before-md() {
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  }
 }
 
 .price-table {
   margin-bottom: 160px;
+
   tr {
     border: 1px solid #FFF;
   }
@@ -612,9 +667,10 @@
     background: rgba(240, 142, 43, 0.70);
 
   }
-  .price-table__th-style{
-    text-align:start;
-    font-family: Raleway;
+
+  .price-table__th-style {
+    text-align: start;
+
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2;
@@ -644,16 +700,17 @@
     background: rgba(240, 142, 43, 0.40);
     height: 86px;
   }
-  .price-table__table-row-7-style{
-    font-family: Raleway;
+
+  .price-table__table-row-7-style {
+
     font-size: 18px;
     font-weight: 500;
     line-height: 1.2;
   }
 
   .price-table__table-col-1 {
-    width: 300px ;
-    font-family: Raleway;
+    width: 300px;
+
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
@@ -661,7 +718,6 @@
   }
 
 }
-
 
 
 table.price-table__table {
@@ -687,7 +743,7 @@ table.price-table__table td, table.price-table__table th {
 }
 
 .price-table__table-service_7 {
-  font-family: Raleway;
+
   font-weight: 600;
   line-height: 1.2;
 }
@@ -695,14 +751,14 @@ table.price-table__table td, table.price-table__table th {
 /*=================================================/PRICE-TABLE======================================================*/
 
 
-
 /*=================================================CALCULATOR======================================================*/
 
-.calculation{
+.calculation {
   background: rgba(255, 255, 255, 0.20);
   margin-bottom: 160px;
 }
-.calculation__title{
+
+.calculation__title {
   margin-bottom: 15px;
   max-width: 800px;
   width: 100%;
@@ -710,7 +766,8 @@ table.price-table__table td, table.price-table__table th {
   font-size: 48px;
   line-height: 1.2;
 }
-.calculation__subtitle{
+
+.calculation__subtitle {
   margin-bottom: 60px;
   font-family: "Raleway";
   max-width: 670px;
@@ -718,7 +775,15 @@ table.price-table__table td, table.price-table__table th {
   font-size: 24px;
   line-height: 1.4;
 }
-.calculation__calculator{
+
+.calculation__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.calculation__calculator {
   max-width: 505px;
   display: flex;
   flex-wrap: wrap;
@@ -727,32 +792,44 @@ table.price-table__table td, table.price-table__table th {
   padding: 40px 30px;
   border-radius: 5px;
   border: 1px solid rgba(209, 209, 209, 0.30);
-  background: #FFF;
-  box-shadow: 4px 4px 20px 0px rgba(77, 77, 77, 0.34);
+  background: #FFFFFF;
+  opacity: 1;
+  box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
+  margin: 0 15px 0 0;
 }
-.calculation__select{
+
+.calculation__img {
+  max-width: 724px;
+
+
+}
+
+.calculation__select {
   transition: all ease-in-out 0.3s;
   position: relative;
-  &:hover{
-    svg{
-      path{
+
+  &:hover {
+    svg {
+      path {
         stroke: #F08E2B;
       }
     }
   }
-  .calculation__select-title{
-    font-family: Raleway;
+
+  .calculation__select-title {
+
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 10px;
   }
-  .calculation__select-header{
+
+  .calculation__select-header {
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    font-family: Raleway;
+
     font-weight: 500;
     line-height: 1.20;
     border-radius: 5px;
@@ -760,70 +837,81 @@ table.price-table__table td, table.price-table__table th {
     background: #F8F8F8;
     box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.02) inset;
   }
-  .calculation__select-current{
-    font-family: Raleway;
+
+  .calculation__select-current {
+
     font-size: 16px;
     line-height: 1.2;
   }
-  .calculation__select-icon{
+
+  .calculation__select-icon {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-shrink: 0;
     transition: all ease-in-out 0.3s;
   }
-  .calculation__select-body{
+
+  .calculation__select-body {
     position: absolute;
     padding: 15px;
     display: none;
-    z-index: 100000;
+    z-index: 20;
     left: 0;
     right: 0;
     top: 115%;
     border-radius: 5px;
     border: 0.5px solid #D1D1D1;
     background: #FFF;
-    font-family: Raleway;
+
     line-height: 1.2;
   }
-  .calculation__select-item{
-    font-family: Raleway;
+
+  .calculation__select-item {
+
     padding: 8px;
     cursor: pointer;
     line-height: 1.2;
     transition: all ease-in-out 0.3s;
-    &:hover{
+
+    &:hover {
       color: #D1D1D1;
     }
   }
 }
-.calculation__select.select-active .calculation__select-body{
+
+.calculation__select.select-active .calculation__select-body {
   display: block;
 }
 
-.calculation__select_1{
+.calculation__select_1 {
   max-width: 253px;
   width: 100%;
 }
-.calculation__select_2{
+
+.calculation__select_2 {
   max-width: 173px;
   width: 100%;
 }
-.calculation__select_3{
+
+.calculation__select_3 {
   margin-top: 20px;
   width: 100%;
 }
-.calculation__select_4{
+
+.calculation__select_4 {
   margin-top: 10px;
   max-width: 253px;
   width: 100%;
   max-height: 90px;
   height: 100%;
-  .form_radio_btn_5{
+
+  .form_radio_btn_5 {
     margin-top: 10px;
     width: 100%;
     max-width: unset;
-    label{
+
+    label {
       max-width: unset;
       width: 100%;
     }
@@ -831,11 +919,13 @@ table.price-table__table td, table.price-table__table th {
 
   }
 }
-.calculation__select-title_4{
+
+.calculation__select-title_4 {
   margin-bottom: 20px !important;
 
 }
-.calculation__select_5{
+
+.calculation__select_5 {
   margin-top: 48px;
   display: flex;
   flex-wrap: wrap;
@@ -852,9 +942,11 @@ table.price-table__table td, table.price-table__table th {
   width: 100%;
 
 }
+
 .form_radio_btn input[type=radio] {
   display: none;
 }
+
 .form_radio_btn label {
   display: inline-block;
   text-align: center;
@@ -887,6 +979,7 @@ table.price-table__table td, table.price-table__table th {
   position: relative;
 
 }
+
 .checkbox-btn input[type=checkbox] {
   z-index: -1;
   opacity: 0;
@@ -894,6 +987,7 @@ table.price-table__table td, table.price-table__table th {
   width: 0;
   height: 0;
 }
+
 .checkbox-btn span {
   display: flex;
   width: 100%;
@@ -927,11 +1021,12 @@ table.price-table__table td, table.price-table__table th {
   color: #666;
   cursor: default;
 }
+
 .checkbox-btn input[type=checkbox]:checked:disabled + span {
   background: #f7efdc;
 }
 
-.calculation__result{
+.calculation__result {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -941,16 +1036,18 @@ table.price-table__table td, table.price-table__table th {
   border: 0.5px solid #D1D1D1;
   background: #F8F8F8;
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.02) inset;
- .calculation__result_number{
-   display: flex;
-   align-items: center;
-   margin-right: 20px;
-       font-family: Raleway;
-       font-size: 24px;
-       line-height: 1.2;
- }
+
+  .calculation__result_number {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
-.calculation__result-btn{
+
+.calculation__result-btn {
   cursor: pointer;
   margin-top: 14px;
   display: block;
@@ -960,10 +1057,11 @@ table.price-table__table td, table.price-table__table th {
   border-radius: 5px;
   background: #E78B2F;
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.02) inset;
-  p{
+
+  p {
     text-align: center;
     color: #FFF;
-    font-family: Raleway;
+
     font-weight: 600;
     line-height: 1.2;
   }
@@ -973,30 +1071,36 @@ table.price-table__table td, table.price-table__table th {
 /*=================================================/CALCULATOR======================================================*/
 
 
-
 /*=================================================EMPLOYEES======================================================*/
 
 .employees__slider {
   margin-bottom: 80px;
 }
-.block__content_employees{
+
+.block__content_employees {
 
 }
-.employees__slider{
 
+.employees__slider {
+  .slick-dots li button:before {
+    content: "";
+  }
 }
-.employees__title{
+
+.employees__title {
   margin-bottom: 18px;
-  font-family: "Prosto One";
+  font-family: "Prosto One", sans-serif;
   font-size: 48px;
   line-height: 1.2;
 }
-.employees__subtitle{
+
+.employees__subtitle {
   margin-bottom: 50px;
-  font-family: Raleway;
+
   font-size: 24px;
   line-height: 1.2;
 }
+
 .employees__slider-item {
   max-width: 340px;
   width: 100%;
@@ -1005,10 +1109,12 @@ table.price-table__table td, table.price-table__table th {
   overflow: hidden;
   margin-right: 40px;
   position: relative;
+
   iframe {
     width: 100%;
     height: 100%;
   }
+
   @include before-md() {
     width: 500px;
   }
@@ -1017,6 +1123,7 @@ table.price-table__table td, table.price-table__table th {
   }
 
 }
+
 .employees__slider-item::before, .employees__slider-item {
   content: "";
   display: block;
@@ -1025,93 +1132,120 @@ table.price-table__table td, table.price-table__table th {
 }
 
 
-
-
 /*=================================================/EMPLOYEES======================================================*/
 
 
-
 /*=================================================REVIEWS======================================================*/
-.reviews{
+.reviews {
   background: url('../../assets/img/hero-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0 80px 0;
+  position: relative;
 
 }
-.block__content_reviews{
+
+.block__content_reviews {
   max-width: 1300px;
   width: 100%;
 }
-.reviews__title{
+
+.reviews__title {
   margin-bottom: 60px;
   font-family: "Prosto One";
   font-size: 48px;
   line-height: 1.2;
 }
-.reviews__slider-wrapper{
-  padding: 0 100px 0 100px;
+
+.reviews__slider-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   position: relative;
 
 }
-.reviews__slider{
+
+.reviews__slider {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
-}
-.slider-arrow-next{
-  svg{
-    &:hover{
-      path{
+  .slick-slide {
+    opacity: 0;
+  }
+  .slick-active {
+    opacity: 1;
+  }
+
+  .slick-track {
+    overflow: visible;
+  }
+  .slick-list {
+    overflow: visible;
+    padding: 0 130px;
+  }
+  .slider-arrow-next {
+  svg {
+    &:hover {
+      path {
         stroke: #D1D1D1;
       }
     }
   }
+
   position: absolute;
-  right: 0 ;
-  top: 50% ;
-  z-index: 1000000000000000;
-  width: unset !important;
-}
-.slider-arrow-prev{
-  svg{
-    &:hover{
-      path{
-        stroke: #D1D1D1;
-      }
-    }
-  }
-  position: absolute;
-  left: 0;
+  right: 0;
   top: 50%;
+
   width: unset !important;
-  z-index: 1000000000000000;
+}
+
+  .slider-arrow-prev {
+    svg {
+      &:hover {
+        path {
+          stroke: #D1D1D1;
+        }
+      }
+    }
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: unset !important;
+
+
+  }
+
+  .reviews__slider-item {
+    border-radius: 10px;
+    max-width: 490px;
+    width: 100%;
+    padding: 70px 30px;
+    background: #FFFFFF;
+    overflow: hidden;
+    margin-right: 60px;
+    position: relative;
+    border-top: #FFFFFF;
+    background-clip: padding-box;
+
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include before-md() {
+      width: 500px;
+    }
+    @include before-sm() {
+      width: 299px;
+    }
+  }
 
 }
-.reviews__slider-item{
-  border-radius: 10px;
-  max-width: 490px;
-  width: 100%;
-  padding: 70px 30px;
-  background: #FFFFFF;
-  overflow: hidden;
-  margin-right: 60px;
-  position: relative;
-border-top: #FFFFFF;
- 
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
-  @include before-md() {
-    width: 500px;
-  }
-  @include before-sm() {
-    width: 299px;
-  }
-}
+
+
 
 
 //.circle{
@@ -1126,100 +1260,104 @@ border-top: #FFFFFF;
 //  background: url('../../assets/img/hero-background.png');
 //  background-repeat: no-repeat;
 //}
-.reviews__name{
+.reviews__name {
   margin-bottom: 17px;
-  font-family: Raleway;
+
   font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
 }
-.reviews__feedback{
+
+.reviews__feedback {
   text-align: center;
-  font-family: Raleway;
+
   line-height: 1.2;
 }
-
-
-
 
 
 /*=================================================/REVIEWS======================================================*/
 
 
 /*=================================================CONTACTS======================================================*/
-.block__content_contacts{
+.block__content_contacts {
   padding: 60px;
   background: #FFFFFF;
   margin-top: -150px;
   border-radius: 5px;
 }
-.contacts__title{
+
+.contacts__title {
   margin-bottom: 50px;
   font-family: "Prosto One";
   font-size: 48px;
   text-align: center;
-  @include before-sm(){
+  @include before-sm() {
     text-align: center;
     font-size: 22px;
   }
 }
 
-.contacts__grid{
+.contacts__grid {
   display: grid;
   grid-template-columns: 450px 200px 200px;
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 0px;
-@include before-lg(){
-  grid-template-columns: repeat(1,1fr);
-  justify-items: center;
-  grid-row-gap: 20px;
-}
-  @include before-lg(){
+  @include before-lg() {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap: 20px;
+  }
+  @include before-lg() {
     justify-items: start;
     grid-row-gap: 20px;
   }
 }
 
-.contacts__grid-item{
+.contacts__grid-item {
 
-p,a{
-  font-family: Raleway;
-  line-height: 1.2;
-  margin-bottom: 12px;
-}
-  .contacts__grid-item_1{
+  p, a {
+
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .contacts__grid-item_1 {
 
   }
-  .contacts__grid-item_2{
-    p{
+
+  .contacts__grid-item_2 {
+    p {
       color: #323232;
-      font-family: Raleway;
+
       line-height: 1.2;
     }
   }
-  .contacts__item-1-info{
 
-    svg{
+  .contacts__item-1-info {
+
+    svg {
       margin-right: 10px;
       transform: translateY(20%);
     }
   }
 }
-.contacts__item-1-title{
+
+.contacts__item-1-title {
   margin-bottom: 20px;
-  font-family: Raleway;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
-  @include before-sm(){
+  @include before-sm() {
     text-align: center;
     font-size: 18px;
   }
 }
-.contacts__info-first-address{
-  &:before{
+
+.contacts__info-first-address {
+  &:before {
     content: "";
     display: inline-block;
     margin-right: 8px;
@@ -1228,49 +1366,42 @@ p,a{
     height: 18px;
     background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4IiBmaWxsPSJub25lIj4KICA8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDAxMTA1KSI+CiAgICA8cGF0aCBkPSJNMTUuNzUgNy41QzE1Ljc1IDEyLjc1IDkgMTcuMjUgOSAxNy4yNUM5IDE3LjI1IDIuMjUgMTIuNzUgMi4yNSA3LjVDMi4yNSA1LjcwOTc5IDIuOTYxMTYgMy45OTI5IDQuMjI3MDMgMi43MjcwM0M1LjQ5MjkgMS40NjExNiA3LjIwOTc5IDAuNzUgOSAwLjc1QzEwLjc5MDIgMC43NSAxMi41MDcxIDEuNDYxMTYgMTMuNzczIDIuNzI3MDNDMTUuMDM4OCAzLjk5MjkgMTUuNzUgNS43MDk3OSAxNS43NSA3LjVaIiBzdHJva2U9IiNGMDhFMkIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgICA8cGF0aCBkPSJNOSA5Ljc1QzEwLjI0MjYgOS43NSAxMS4yNSA4Ljc0MjY0IDExLjI1IDcuNUMxMS4yNSA2LjI1NzM2IDEwLjI0MjYgNS4yNSA5IDUuMjVDNy43NTczNiA1LjI1IDYuNzUgNi4yNTczNiA2Ljc1IDcuNUM2Ljc1IDguNzQyNjQgNy43NTczNiA5Ljc1IDkgOS43NVoiIHN0cm9rZT0iI0YwOEUyQiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8L2c+Cjwvc3ZnPgo=");
   }
-.contacts__phone{
-  &:before{
-    content: "";
-    display: inline-block;
-    width: 19px;
-    height: 19px;
-    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIiBmaWxsPSJub25lIj4KPHBhdGggZD0iTTEyLjE0OTIgNC40NDAzNUNxMi45OTA5IDQuNjA0MjUgMTMuNzY0NCA1LjAxNTExIDE0LjM3MDggNS42MjAzM0MxNC45NzcyIDYuMjI1NTYgMTUuMzg4OCA2Ljk5NzYxIDE1LjUzMDk3LjgzNzY5TTEyLjE0OTIgMUMxMy44OTc5IDEuMTkzODkgMTUuNTI4NiAxLjk3NTQ5IDE2Ljc3MzUgMy4yMTY0NUNxOC4wMTg0IDQuNDU3NDEgMTguODAzNSA2LjA4Mzk4IDE5IDcuODI5MDlNTEE4LjEzODMgMTQuNjkyNlYxNy4yNzI4QzE4LjEzOTIgMTcuNTEyNCAxOC4wOTAxIDE3Ljc0OTUgMTcuOTkzOSAxNy45NjkwQzE3Ljg5NzggMTguMTg4NCAxNy43NTY4IDE4LjM4NTQgMTcuNTc5OSAxOC41NDc0QzE3LjQwMzEgMTguNzA5MyAxNy4xOTQzIDE4LjgzMjYgMTYuOTY3IDE4LjkwOTMQMTYuNzM5NiAxOC45ODYxIDE2LjQ5ODcgMTkuMDE0NiAxNi4yNTk3IDE4Ljk5M0MxMy42MDggMTguNzA1NCAxMS4wNjA4IDE3LjgwMTEgOC44MjI5MiAxNi4zNTI2QzYuNzQwODIgMTUuMDMyIDQuOTc1NTcgMTMuMjcwMSAzLjY1MjUyIDExLjE5MkMyLjE5NjE3IDguOTQ4MjQgMS4yODk4NSA2LjM5MzYgMS4wMDY5OSAzLjczNTA4QzAuOTg1NDYgMy40OTcyMyAxLjAxMzc3IDMuMjU3NTIgMS4wOTAxNSAzLjAzMTJDMS4xNjY1MiAyLjgwNDg4IDEuMjg5MjcgMi41OTY5MSAxLjQ1MDU5IDIuNDIwNTRDMTIuNjExOSAyLjI0NDE2IDEuODA4MjQgMi4xMDMyNCAyLjAyNzExIDIuMDA2NzVDMi4yNDU5OCAxLjkxMDI3IDIuNDgyNTggMS44NjAzMSAyLjcyMTg1IDEuODYwMDlINy4zMDcwNUM1LjcyNTI1IDEuODU1OTggNi4xMzA2OSAyLjAwMzc5IDYuNDQ3NzggMi4yNzU5N0M2Ljc2NDg3IDIuNTQ4MTUgNi45NzE5OCAyLjkyNjEyIDcuMDMwNTEgMy4zMzk0NEM3LjEzOTYzIDQuMTY1MTggNy4zNDE5OSA0Ljk3NTk1IDcuNjMzNzMgNS43NTYyOEM3Ljc0OTY3IDYuMDY0MTMgNy43NzQ3NiA2LjM5ODY5IDcuNzA2MDMgNi43MjAzNEM3LjYzNzMxIDcuMDQxOTggNy40NzY0NCA3LjMzNzIyIDcuMjQ1OTUgNy41NzEwNkw2LjE1MTU1IDguNjYzMzdDNy4zNzgyNyAxMC44MTY2IDkuMTY0NTYgMTIuNTk5NSAxMS4zMjIgMTMuODIzOUwxMi40MTY0IDEyLjczMTZDMTIuNjUwNiAxMi41MDAzIDEyLjk0NjUgMTIuMzQxIDMuMjY4NyAxMi4yNzI0QzEzLjU5MSAxMi4yMDM4IDEzLjkyNjIgMTIuMjI4OCAxNC4yMzQ2IDEyLjM0NDVDMTUuMDE2NCAxMi42MzU3IDE1LjgyODggMTIuODM3NyAxNi42NTYxIDEyLjk0NjZDMTcuMDc0NyAxMy4wMDU1IDE3LjQ1NyAxMy4yMTYgMTcuNzMwMyAxMy41Mzc5QzE4LjAwMzUgMTMuODU5OCAxOC4xNDg4IDE0LjI3MDggMTguMTM4MyAxNC42OTI2WiIgc3Ryb2tlPSIjRjA4RTJCIiBzdHJva2Utd3lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=");
-  }
 
+  .contacts__phone {
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIiBmaWxsPSJub25lIj4KPHBhdGggZD0iTTEyLjE0OTIgNC40NDAzNUNxMi45OTA5IDQuNjA0MjUgMTMuNzY0NCA1LjAxNTExIDE0LjM3MDggNS42MjAzM0MxNC45NzcyIDYuMjI1NTYgMTUuMzg4OCA2Ljk5NzYxIDE1LjUzMDk3LjgzNzY5TTEyLjE0OTIgMUMxMy44OTc5IDEuMTkzODkgMTUuNTI4NiAxLjk3NTQ5IDE2Ljc3MzUgMy4yMTY0NUNxOC4wMTg0IDQuNDU3NDEgMTguODAzNSA2LjA4Mzk4IDE5IDcuODI5MDlNTEE4LjEzODMgMTQuNjkyNlYxNy4yNzI4QzE4LjEzOTIgMTcuNTEyNCAxOC4wOTAxIDE3Ljc0OTUgMTcuOTkzOSAxNy45NjkwQzE3Ljg5NzggMTguMTg4NCAxNy43NTY4IDE4LjM4NTQgMTcuNTc5OSAxOC41NDc0QzE3LjQwMzEgMTguNzA5MyAxNy4xOTQzIDE4LjgzMjYgMTYuOTY3IDE4LjkwOTMQMTYuNzM5NiAxOC45ODYxIDE2LjQ5ODcgMTkuMDE0NiAxNi4yNTk3IDE4Ljk5M0MxMy42MDggMTguNzA1NCAxMS4wNjA4IDE3LjgwMTEgOC44MjI5MiAxNi4zNTI2QzYuNzQwODIgMTUuMDMyIDQuOTc1NTcgMTMuMjcwMSAzLjY1MjUyIDExLjE5MkMyLjE5NjE3IDguOTQ4MjQgMS4yODk4NSA2LjM5MzYgMS4wMDY5OSAzLjczNTA4QzAuOTg1NDYgMy40OTcyMyAxLjAxMzc3IDMuMjU3NTIgMS4wOTAxNSAzLjAzMTJDMS4xNjY1MiAyLjgwNDg4IDEuMjg5MjcgMi41OTY5MSAxLjQ1MDU5IDIuNDIwNTRDMTIuNjExOSAyLjI0NDE2IDEuODA4MjQgMi4xMDMyNCAyLjAyNzExIDIuMDA2NzVDMi4yNDU5OCAxLjkxMDI3IDIuNDgyNTggMS44NjAzMSAyLjcyMTg1IDEuODYwMDlINy4zMDcwNUM1LjcyNTI1IDEuODU1OTggNi4xMzA2OSAyLjAwMzc5IDYuNDQ3NzggMi4yNzU5N0M2Ljc2NDg3IDIuNTQ4MTUgNi45NzE5OCAyLjkyNjEyIDcuMDMwNTEgMy4zMzk0NEM3LjEzOTYzIDQuMTY1MTggNy4zNDE5OSA0Ljk3NTk1IDcuNjMzNzMgNS43NTYyOEM3Ljc0OTY3IDYuMDY0MTMgNy43NzQ3NiA2LjM5ODY5IDcuNzA2MDMgNi43MjAzNEM3LjYzNzMxIDcuMDQxOTggNy40NzY0NCA3LjMzNzIyIDcuMjQ1OTUgNy41NzEwNkw2LjE1MTU1IDguNjYzMzdDNy4zNzgyNyAxMC44MTY2IDkuMTY0NTYgMTIuNTk5NSAxMS4zMjIgMTMuODIzOUwxMi40MTY0IDEyLjczMTZDMTIuNjUwNiAxMi41MDAzIDEyLjk0NjUgMTIuMzQxIDMuMjY4NyAxMi4yNzI0QzEzLjU5MSAxMi4yMDM4IDEzLjkyNjIgMTIuMjI4OCAxNC4yMzQ2IDEyLjM0NDVDMTUuMDE2NCAxMi42MzU3IDE1LjgyODggMTIuODM3NyAxNi42NTYxIDEyLjk0NjZDMTcuMDc0NyAxMy4wMDU1IDE3LjQ1NyAxMy4yMTYgMTcuNzMwMyAxMy41Mzc5QzE4LjAwMzUgMTMuODU5OCAxOC4xNDg4IDE0LjI3MDggMTguMTM4MyAxNC42OTI2WiIgc3Ryb2tlPSIjRjA4RTJCIiBzdHJva2Utd3lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=");
+    }
+
+  }
 }
-}
-.contacts__item-2-title{
-  font-family: Raleway;
+
+.contacts__item-2-title {
+
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
 }
 
-.contacts__item-3-title{
+.contacts__item-3-title {
   margin-bottom: 20px;
-  font-family: Raleway;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
 }
 
 
-
-
-
-
-
-
-
-.contacts__item-3-socials{
-  img{
+.contacts__item-3-socials {
+  img {
     width: 19px;
     height: 19px;
   }
 }
-
-
 
 
 /*=================================================/CONTACTS======================================================*/
