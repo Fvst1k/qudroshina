@@ -7,7 +7,7 @@ Template Name: home
 <?php get_header() ?>
 <section class="hero">
     <div class="hero-bg">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/protector-hero.png" alt="">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/protector-hero.png" alt="bg">
     </div>
     <div class="block__content block__content_hero ">
         <div class="hero__text">
