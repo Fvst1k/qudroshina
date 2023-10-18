@@ -1,6 +1,8 @@
 .footer {
   background: #232323;
   margin-top: auto;
+  position: relative;
+  z-index: 100;
 }
 .footer__row {
   padding: 40px 0;
