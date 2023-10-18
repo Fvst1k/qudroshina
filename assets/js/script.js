@@ -54,6 +54,37 @@ $(document).ready(function () {
 
     });
 });
+$(document).ready(function () {
+    $('.discounts__slider').slick({
+        dots: false,
+        infinite: true,
+        centerMode:true,
+        centerPadding: "0",
+        autoplay:true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: true,
+        speed: 1000,
+        draggable:false,
+        arrows: true,
+        prevArrow: `<button type="button" class="slick-prev slider-arrow-prev">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+  <path d="M18.75 22.5L11.25 15L18.75 7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></button>`,
+        nextArrow: `<button type="button" class="slick-next slider-arrow-next">
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+  <path d="M11.25 22.5L18.75 15L11.25 7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>`,
+        responsive: [
+            {
+                breakpoint: 992, settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
 
 let select = function (){
 let selectHeader = document.querySelectorAll('.calculation__select-header');
