@@ -79,22 +79,16 @@ a {
   top: 0;
 }
 
-.block_first-on-page {
+.tl__title {
+  font-family: "Prosto One", sans-serif;
+  font-size: 47px;
+  line-height: 1.2;
+  @include before-sm(){
+    font-size: 22px;
+
+  }
 
 }
-
-.block__content {
-
-
-}
-
-.title{ // Может standard-title, standard-btn и т.д.?
-
-}
-
-
-
-
 
 
 //Special classes
@@ -120,6 +114,7 @@ a {
 }
 .hover_scale {
   transition: ease-in-out all 0.3s;
+  cursor: pointer;
   &:hover {
     transform: scale(1.02);
   }

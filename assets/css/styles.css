@@ -190,6 +190,17 @@ a {
   top: 0;
 }
 
+.tl__title {
+  font-family: "Prosto One", sans-serif;
+  font-size: 47px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 575px) {
+  .tl__title {
+    font-size: 22px;
+  }
+}
+
 .responsive-block {
   position: relative;
   width: 130px;
@@ -210,6 +221,7 @@ a {
 
 .hover_scale {
   transition: ease-in-out all 0.3s;
+  cursor: pointer;
 }
 .hover_scale:hover {
   transform: scale(1.02);
@@ -220,7 +232,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 30;
+  z-index: 100;
 }
 
 .header__row {
@@ -229,6 +241,10 @@ a {
   justify-content: space-between;
   width: 100%;
   padding: 60px 0;
+}
+
+.header__logo {
+  min-width: 74px;
 }
 
 .header__menu {
@@ -258,11 +274,12 @@ a {
   align-items: center;
   justify-content: space-between;
   max-width: 288px;
+  min-width: 250px;
   width: 100%;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
-  padding: 20px 13px;
+  padding: 15px 13px;
 }
 .header__links-row p {
   font-weight: 700;
@@ -1413,7 +1430,7 @@ table.price-table__table td, table.price-table__table th {
   margin-right: 60px;
   position: relative;
   border-top: #FFFFFF;
-  background-clip: padding-box;
+  -webkit-mask-image: radial-gradient(circle 100px at 50% 0, rgba(0, 0, 0, 0) 50px, #000 0);
 }
 .reviews__slider .reviews__slider-item iframe {
   width: 100%;
@@ -1549,6 +1566,140 @@ table.price-table__table td, table.price-table__table th {
 }
 
 /*=================================================/CONTACTS======================================================*/
+.services {
+  position: relative;
+  min-height: 90vh;
+}
+
+.block__content_services {
+  padding: 265px 20px 70px;
+}
+@media screen and (max-width: 575px) {
+  .block__content_services {
+    padding: 200px 10px 40px;
+  }
+}
+
+.services__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.4;
+}
+.services__bg img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 575px) {
+  .services__bg {
+    opacity: 1;
+    width: 1000px;
+  }
+}
+
+.services__bg_opacity {
+  opacity: 0.5;
+}
+@media screen and (max-width: 767px) {
+  .services__bg_opacity {
+    top: 0;
+    right: -30%;
+    bottom: unset;
+    left: unset;
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .services__bg_opacity {
+    top: 25%;
+    right: 15%;
+    left: unset;
+    width: 630px;
+    height: 900px;
+    transform: rotate(33deg);
+    opacity: 1;
+  }
+}
+
+.services__subtitle {
+  margin-top: 15px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.services__tablet {
+  margin: 60px auto 0 auto;
+  max-width: 1010px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+@media screen and (max-width: 991px) {
+  .services__tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 575px) {
+  .services__tablet {
+    grid-template-columns: 1fr;
+    margin-top: 36px;
+    grid-column-gap: 0;
+    grid-row-gap: 17px;
+  }
+}
+
+.services__tablet-item {
+  min-height: 115px;
+  width: 100%;
+  padding: 19px 27px 13px;
+  border-radius: 10px;
+  border-left: 1px solid #E78B2F;
+  background: #FFF;
+  display: flex;
+  flex-flow: column;
+}
+@media screen and (max-width: 575px) {
+  .services__tablet-item {
+    max-width: 100%;
+  }
+}
+
+.services__tablet-group {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.services__tablet-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media screen and (max-width: 575px) {
+  .services__tablet-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.services__tablet-link {
+  margin-right: 4px;
+  color: #E78B2F;
+  padding-bottom: 3px;
+}
+@media screen and (max-width: 575px) {
+  .services__tablet-link {
+    grid-template-columns: 1fr;
+  }
+}
+
 .discounts {
   padding: 50px 0;
   margin-top: 160px;
@@ -1564,9 +1715,6 @@ table.price-table__table td, table.price-table__table th {
 
 .discounts__title {
   margin-bottom: 40px;
-  font-family: "Prosto One";
-  font-size: 47px;
-  line-height: 1.2;
 }
 
 .discounts__slider {
@@ -1638,6 +1786,8 @@ table.price-table__table td, table.price-table__table th {
 .footer {
   background: #232323;
   margin-top: auto;
+  position: relative;
+  z-index: 100;
 }
 
 .footer__row {

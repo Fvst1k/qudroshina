@@ -1217,6 +1217,7 @@ table.price-table__table td, table.price-table__table th {
 
   }
 
+
   .reviews__slider-item {
     border-radius: 10px;
     max-width: 490px;
@@ -1227,8 +1228,7 @@ table.price-table__table td, table.price-table__table th {
     margin-right: 60px;
     position: relative;
     border-top: #FFFFFF;
-    background-clip: padding-box;
-
+    -webkit-mask-image:radial-gradient(circle 100px at 50% 0, #0000 50px, #000 0);
 
     iframe {
       width: 100%;

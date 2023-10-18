@@ -6,7 +6,7 @@ Template Name: discounts
 <?php get_header() ?>
 <section class="discounts">
     <div class="block__content block__content_discounts">
-        <h2 class="discounts__title">АКЦИИ</h2>
+        <h2 class="discounts__title tl__title">АКЦИИ</h2>
     <div class="discounts__slider">
         <div class="discounts__slider-item">
             <div class="discounts__slider-item-img">
