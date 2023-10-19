@@ -19,6 +19,26 @@
     max-width: unset;
 
   }
+  @include before-lg(){
+    top: unset;
+    right: -40%;
+  }
+  @include before-md() {
+    top: unset;
+    right: -30%;
+    img{
+      width: 800px;
+    }
+  }
+  @include before-sm(){
+    right: -40%;
+    img{
+      width: 800px;
+    }
+  }
+  @media screen and (max-width: 425px){
+    right: -55%;
+  }
 }
 
 .block__content_hero {
@@ -38,7 +58,7 @@
     }
   }
   @include before-md() {
-    padding: 100px 20px;
+    padding: 160px 20px;
   }
 }
 
@@ -141,6 +161,9 @@
   @include before-lg() {
     position: unset;
     transform: unset;
+  }
+  @include before-md() {
+    transform: translateY(15%);
   }
 }
 
@@ -822,6 +845,7 @@ table.price-table__table td, table.price-table__table th {
   margin: 0 15px 0 0;
   @include before-md() {
     max-width: 345px;
+    margin: 0 auto;
   }
 }
 
@@ -1289,6 +1313,7 @@ table.price-table__table td, table.price-table__table th {
 
 
   .reviews__slider-item {
+    position: relative;
     border-radius: 10px;
     max-width: 490px;
     width: 100%;
@@ -1315,7 +1340,18 @@ table.price-table__table td, table.price-table__table th {
       max-width: 300px;
     }
   }
-
+}
+.white-el-wrapper{
+  position: relative;
+}
+.white-el{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  opacity: 0.5;
 }
 
 .reviews__name {
