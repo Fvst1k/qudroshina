@@ -1391,6 +1391,13 @@ table.price-table__table td, table.price-table__table th {
   display: block;
 }
 
+@media screen and (max-width: 991px) {
+  .calculation .calculation__select {
+    width: 100%;
+    max-width: unset;
+  }
+}
+
 .calculation__select_1 {
   max-width: 253px;
   width: 100%;
@@ -1399,6 +1406,11 @@ table.price-table__table td, table.price-table__table th {
 .calculation__select_2 {
   max-width: 173px;
   width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .calculation__select_2 {
+    margin-top: 5px;
+  }
 }
 
 .calculation__select_3 {

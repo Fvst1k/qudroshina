@@ -938,6 +938,14 @@ table.price-table__table td, table.price-table__table th {
 .calculation__select.select-active .calculation__select-body {
   display: block;
 }
+.calculation {
+  .calculation__select {
+    @include before-lg(){
+      width: 100%;
+      max-width: unset;
+    }
+  }
+}
 
 .calculation__select_1 {
   max-width: 253px;
@@ -947,6 +955,9 @@ table.price-table__table td, table.price-table__table th {
 .calculation__select_2 {
   max-width: 173px;
   width: 100%;
+  @include before-lg(){
+    margin-top: 5px;
+  }
 }
 
 .calculation__select_3 {
