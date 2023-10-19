@@ -953,10 +953,10 @@ font-size: 20px;
 }
 
 .calculation__select_5 {
-  margin-top: 48px;
+  margin-top: 22px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 175px;
+  max-width: 150px;
   width: 100%;
   justify-content: space-between;
   align-items: stretch;
@@ -1115,6 +1115,11 @@ font-size: 20px;
 
 .employees__slider {
   margin-bottom: 80px;
+  @include before-md(){
+    .slick-dots{
+      display: none !important;
+    }
+  }
 }
 
 .block__content_employees {
@@ -1210,7 +1215,7 @@ font-size: 20px;
   margin: 0 auto;
   display: flex;
   position: relative;
-
+  overflow: visible;
 }
 
 .reviews__slider {
@@ -1230,9 +1235,13 @@ font-size: 20px;
   }
   .slick-list {
     overflow: visible;
-    padding: 0 130px;
+    padding: 0 60px;
   }
   .slider-arrow-next {
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    width: unset !important;
   svg {
     &:hover {
       path {
@@ -1240,15 +1249,13 @@ font-size: 20px;
       }
     }
   }
-
-  position: absolute;
-  right: 0;
-  top: 50%;
-
-  width: unset !important;
 }
 
   .slider-arrow-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: unset !important;
     svg {
       &:hover {
         path {
@@ -1256,13 +1263,6 @@ font-size: 20px;
         }
       }
     }
-
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: unset !important;
-
-
   }
 
 
@@ -1273,7 +1273,7 @@ font-size: 20px;
     padding: 70px 30px;
     background: #FFFFFF;
     overflow: hidden;
-    margin-right: 60px;
+    margin-right: 40px;
     position: relative;
     border-top: #FFFFFF;
     -webkit-mask-image:radial-gradient(circle 100px at 50% 0, #0000 50px, #000 0);

@@ -1394,10 +1394,10 @@ table.price-table__table td, table.price-table__table th {
 }
 
 .calculation__select_5 {
-  margin-top: 48px;
+  margin-top: 22px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 175px;
+  max-width: 150px;
   width: 100%;
   justify-content: space-between;
   align-items: stretch;
@@ -1544,6 +1544,11 @@ table.price-table__table td, table.price-table__table th {
 .employees__slider {
   margin-bottom: 80px;
 }
+@media screen and (max-width: 767px) {
+  .employees__slider .slick-dots {
+    display: none !important;
+  }
+}
 
 .employees__slider .slick-dots li button:before {
   content: "";
@@ -1635,6 +1640,7 @@ table.price-table__table td, table.price-table__table th {
   margin: 0 auto;
   display: flex;
   position: relative;
+  overflow: visible;
 }
 
 .reviews__slider {
@@ -1654,11 +1660,11 @@ table.price-table__table td, table.price-table__table th {
 }
 .reviews__slider .slick-list {
   overflow: visible;
-  padding: 0 130px;
+  padding: 0 60px;
 }
 .reviews__slider .slider-arrow-next {
   position: absolute;
-  right: 0;
+  right: 12%;
   top: 50%;
   width: unset !important;
 }
@@ -1681,7 +1687,7 @@ table.price-table__table td, table.price-table__table th {
   padding: 70px 30px;
   background: #FFFFFF;
   overflow: hidden;
-  margin-right: 60px;
+  margin-right: 40px;
   position: relative;
   border-top: #FFFFFF;
   -webkit-mask-image: radial-gradient(circle 100px at 50% 0, rgba(0, 0, 0, 0) 50px, #000 0);
