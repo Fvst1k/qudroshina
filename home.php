@@ -461,36 +461,45 @@ Template Name: home
         </h2>
         <div class="reviews__slider-wrapper">
             <div class="reviews__slider">
-                <div class="reviews__slider-item">
-                    <h3 class="reviews__name">Владимир</h3>
-                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
-                        и
-                        предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
-                        рекомендую!</p>
+                <div class="white-el-wrapper">
+                    <div class="white-el"></div>
+                    <div class="reviews__slider-item">
+                        <h3 class="reviews__name">Владимир</h3>
+                        <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
+                            и
+                            предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
+                            рекомендую!</p>
+                    </div>
                 </div>
-                <div class="reviews__slider-item">
-
-                    <h3 class="reviews__name">Владимир</h3>
-                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
-                        и
-                        предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
-                        рекомендую!</p>
+                <div class="white-el-wrapper">
+                    <div class="white-el"></div>
+                    <div class="reviews__slider-item">
+                        <h3 class="reviews__name">Владимир</h3>
+                        <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
+                            и
+                            предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
+                            рекомендую!</p>
+                    </div>
                 </div>
-                <div class="reviews__slider-item">
-
-                    <h3 class="reviews__name">Владимир</h3>
-                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
-                        и
-                        предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
-                        рекомендую!</p>
+                <div class="white-el-wrapper">
+                    <div class="white-el"></div>
+                    <div class="reviews__slider-item">
+                        <h3 class="reviews__name">Владимир</h3>
+                        <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
+                            и
+                            предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
+                            рекомендую!</p>
+                    </div>
                 </div>
-                <div class="reviews__slider-item">
-
-                    <h3 class="reviews__name">Владимир</h3>
-                    <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
-                        и
-                        предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
-                        рекомендую!</p>
+                <div class="white-el-wrapper">
+                    <div class="white-el"></div>
+                    <div class="reviews__slider-item">
+                        <h3 class="reviews__name">Владимир</h3>
+                        <p class="reviews__feedback">Ребята отлично работают: быстро, качественно, не накручивают услуги, но
+                            и
+                            предупреждают о возможных проблемах в дальнейшем, если есть предпосылки. Хороший шиномонтаж,
+                            рекомендую!</p>
+                    </div>
                 </div>
 
             </div>
