@@ -1280,6 +1280,7 @@ table.price-table__table td, table.price-table__table th {
 }
 @media screen and (max-width: 767px) {
   .calculation__calculator {
+    margin: 0 auto;
     max-width: 345px;
   }
 }
@@ -1637,6 +1638,7 @@ table.price-table__table td, table.price-table__table th {
 
 .reviews__slider-wrapper {
   max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -1660,13 +1662,13 @@ table.price-table__table td, table.price-table__table th {
 }
 .reviews__slider .slick-list {
   overflow: visible;
+  max-width: 1300px;
   padding: 0 60px;
 }
 .reviews__slider .slider-arrow-next {
   position: absolute;
   right: 12%;
   top: 50%;
-  width: unset !important;
 }
 .reviews__slider .slider-arrow-next svg:hover path {
   stroke: #D1D1D1;

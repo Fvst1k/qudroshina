@@ -821,6 +821,7 @@ font-size: 20px;
   box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
   margin: 0 15px 0 0;
   @include  before-md(){
+    margin: 0 auto;
     max-width: 345px;
   }
 }
@@ -1212,6 +1213,7 @@ font-size: 20px;
 
 .reviews__slider-wrapper {
   max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -1235,13 +1237,13 @@ font-size: 20px;
   }
   .slick-list {
     overflow: visible;
+    max-width: 1300px;
     padding: 0 60px;
   }
   .slider-arrow-next {
     position: absolute;
     right: 12%;
     top: 50%;
-    width: unset !important;
   svg {
     &:hover {
       path {

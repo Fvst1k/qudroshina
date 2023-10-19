@@ -47,6 +47,11 @@ $(document).ready(function () {
             {
                 breakpoint: 992, settings: {
                     slidesToShow: 1
+                },
+                breakpoint: 767, settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    swipe: true
                 }
             }
         ]
