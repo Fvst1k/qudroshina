@@ -555,7 +555,9 @@
   @include before-xl() {
     white-space: unset;
   }
-
+@include before-sm(){
+  font-size: 32px;
+}
 }
 
 .booking__card-text {
@@ -574,6 +576,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
+
 }
 
 .booking__phone {
@@ -582,6 +585,11 @@
   font-family: "Prosto One", sans-serif;
   font-size: 24px;
   line-height: 1.2;
+  @include before-sm(){
+    font-size: 16px;
+    max-width: 280px;
+    width: 100%;
+  }
 }
 
 .booking__tread-img {
@@ -627,12 +635,17 @@
   font-family: 'Prosto One', sans-serif;
   font-size: 48px;
   line-height: 1.2;
+  @include before-sm{
+    font-size: 32px;
+  }
 }
 
 .price-table__subtitle {
-  
   font-size: 24px;
   line-height: 1.2;
+  @include before-sm{
+    font-size: 20px;
+  }
 }
 
 .mobile-table {
@@ -765,15 +778,26 @@ table.price-table__table td, table.price-table__table th {
   font-family: 'Prosto One', sans-serif;
   font-size: 48px;
   line-height: 1.2;
+  @include before-md(){
+    font-size: 28px;
+  }
+  @include before-sm(){
+    font-size: 24px;
+  }
 }
 
 .calculation__subtitle {
   margin-bottom: 60px;
-  
   max-width: 670px;
   width: 100%;
   font-size: 24px;
   line-height: 1.4;
+@include before-md(){
+font-size: 20px;
+}
+  @include before-sm(){
+    font-size: 18px;
+  }
 }
 
 .calculation__row {
@@ -796,12 +820,18 @@ table.price-table__table td, table.price-table__table th {
   opacity: 1;
   box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
   margin: 0 15px 0 0;
+  @include  before-md(){
+    max-width: 345px;
+  }
+}
+.calculation__row{
+@include  before-md(){
+  flex-wrap: wrap;
+}
 }
 
 .calculation__img {
   max-width: 724px;
-
-
 }
 
 .calculation__select {
@@ -910,13 +940,10 @@ table.price-table__table td, table.price-table__table th {
     margin-top: 10px;
     width: 100%;
     max-width: unset;
-
     label {
       max-width: unset;
       width: 100%;
     }
-
-
   }
 }
 
@@ -933,12 +960,25 @@ table.price-table__table td, table.price-table__table th {
   width: 100%;
   justify-content: space-between;
   align-items: stretch;
-}
+  @include  before-lg(){
+    max-width: unset;
+    margin-top: 80px;
+  }
+  @include  before-md(){
+    max-width: 246px;
 
+  }
+}
+.calculation__select-title_5{
+  @include before-lg(){
+    max-width: 280px;
+    width: 100%;
+  }
+}
 .form_radio_btn {
   padding-bottom: 10px;
   display: flex;
-  max-width: 80px;
+  max-width: 60px;
   width: 100%;
 
 }
@@ -1092,13 +1132,18 @@ table.price-table__table td, table.price-table__table th {
   font-family: "Prosto One", sans-serif;
   font-size: 48px;
   line-height: 1.2;
+  @include before-sm(){
+     font-size: 32px;
+  }
 }
 
 .employees__subtitle {
   margin-bottom: 50px;
-
   font-size: 24px;
   line-height: 1.2;
+  @include before-sm(){
+    font-size: 20px;
+  }
 }
 
 .employees__slider-item {
@@ -1155,6 +1200,9 @@ table.price-table__table td, table.price-table__table th {
   font-family: 'Prosto One', sans-serif;
   font-size: 48px;
   line-height: 1.2;
+  @include before-sm(){
+    font-size: 32px;
+  }
 }
 
 .reviews__slider-wrapper {

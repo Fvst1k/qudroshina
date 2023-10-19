@@ -383,6 +383,7 @@ Template Name: home
                         </label>
                     </div>
                     <div class="calculation__select calculation__select_5">
+                        <h3 class="calculation__select-title calculation__select-title_5">Количество колес</h3>
                         <div class="form_radio_btn">
                             <input id="radio-1" type="radio" name="radio" value="1" checked>
                             <label for="radio-1">1</label>
