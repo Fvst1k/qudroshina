@@ -496,7 +496,6 @@
     max-width: 237px;
 
 
-
   }
 
 }
@@ -535,6 +534,7 @@
 
 .booking__card-info {
   position: relative;
+
   svg {
     margin-right: 20px;
   }
@@ -555,9 +555,9 @@
   @include before-xl() {
     white-space: unset;
   }
-@include before-sm(){
-  font-size: 32px;
-}
+  @include before-sm() {
+    font-size: 32px;
+  }
 }
 
 .booking__card-text {
@@ -585,7 +585,7 @@
   font-family: "Prosto One", sans-serif;
   font-size: 24px;
   line-height: 1.2;
-  @include before-sm(){
+  @include before-sm() {
     font-size: 16px;
     max-width: 280px;
     width: 100%;
@@ -610,7 +610,7 @@
     bottom: 0;
     right: -90px;
     max-width: 296px;
-    max-height: 394px ;
+    max-height: 394px;
 
 
   }
@@ -635,7 +635,7 @@
   font-family: 'Prosto One', sans-serif;
   font-size: 48px;
   line-height: 1.2;
-  @include before-sm{
+  @include before-sm {
     font-size: 32px;
   }
 }
@@ -643,7 +643,7 @@
 .price-table__subtitle {
   font-size: 24px;
   line-height: 1.2;
-  @include before-sm{
+  @include before-sm {
     font-size: 20px;
   }
 }
@@ -778,10 +778,10 @@ table.price-table__table td, table.price-table__table th {
   font-family: 'Prosto One', sans-serif;
   font-size: 48px;
   line-height: 1.2;
-  @include before-md(){
+  @include before-md() {
     font-size: 28px;
   }
-  @include before-sm(){
+  @include before-sm() {
     font-size: 24px;
   }
 }
@@ -792,10 +792,10 @@ table.price-table__table td, table.price-table__table th {
   width: 100%;
   font-size: 24px;
   line-height: 1.4;
-@include before-md(){
-font-size: 20px;
-}
-  @include before-sm(){
+  @include before-md() {
+    font-size: 20px;
+  }
+  @include before-sm() {
     font-size: 18px;
   }
 }
@@ -820,14 +820,15 @@ font-size: 20px;
   opacity: 1;
   box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
   margin: 0 15px 0 0;
-  @include  before-md(){
+  @include before-md() {
     max-width: 345px;
   }
 }
-.calculation__row{
-@include  before-md(){
-  flex-wrap: wrap;
-}
+
+.calculation__row {
+  @include before-md() {
+    flex-wrap: wrap;
+  }
 }
 
 .calculation__img {
@@ -940,6 +941,7 @@ font-size: 20px;
     margin-top: 10px;
     width: 100%;
     max-width: unset;
+
     label {
       max-width: unset;
       width: 100%;
@@ -960,21 +962,23 @@ font-size: 20px;
   width: 100%;
   justify-content: space-between;
   align-items: stretch;
-  @include  before-lg(){
+  @include before-lg() {
     max-width: unset;
     margin-top: 80px;
   }
-  @include  before-md(){
+  @include before-md() {
     max-width: 246px;
 
   }
 }
-.calculation__select-title_5{
-  @include before-lg(){
+
+.calculation__select-title_5 {
+  @include before-lg() {
     max-width: 280px;
     width: 100%;
   }
 }
+
 .form_radio_btn {
   padding-bottom: 10px;
   display: flex;
@@ -1115,8 +1119,8 @@ font-size: 20px;
 
 .employees__slider {
   margin-bottom: 80px;
-  @include before-md(){
-    .slick-dots{
+  @include before-md() {
+    .slick-dots {
       display: none !important;
     }
   }
@@ -1137,8 +1141,8 @@ font-size: 20px;
   font-family: "Prosto One", sans-serif;
   font-size: 48px;
   line-height: 1.2;
-  @include before-sm(){
-     font-size: 32px;
+  @include before-sm() {
+    font-size: 32px;
   }
 }
 
@@ -1146,7 +1150,7 @@ font-size: 20px;
   margin-bottom: 50px;
   font-size: 24px;
   line-height: 1.2;
-  @include before-sm(){
+  @include before-sm() {
     font-size: 20px;
   }
 }
@@ -1198,6 +1202,9 @@ font-size: 20px;
 .block__content_reviews {
   max-width: 1300px;
   width: 100%;
+  @include before-lg(){
+    padding: 0 0 0 10px;
+  }
 }
 
 .reviews__title {
@@ -1205,17 +1212,19 @@ font-size: 20px;
   font-family: 'Prosto One', sans-serif;
   font-size: 48px;
   line-height: 1.2;
-  @include before-sm(){
+  @include before-sm() {
     font-size: 32px;
   }
 }
 
 .reviews__slider-wrapper {
-  max-width: 1300px;
+  max-width: 1140px;
   margin: 0 auto;
   display: flex;
   position: relative;
   overflow: visible;
+  width: 100%;
+
 }
 
 .reviews__slider {
@@ -1223,9 +1232,14 @@ font-size: 20px;
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
+
   .slick-slide {
     opacity: 0;
+    @include before-lg(){
+      opacity: 1;
+    }
   }
+
   .slick-active {
     opacity: 1;
   }
@@ -1233,29 +1247,37 @@ font-size: 20px;
   .slick-track {
     overflow: visible;
   }
+
   .slick-list {
     overflow: visible;
     padding: 0 60px;
+    @include before-sm(){
+      padding: 0;
+    }
+
   }
+
   .slider-arrow-next {
     position: absolute;
-    right: 12%;
+    right: 0;
     top: 50%;
     width: unset !important;
-  svg {
-    &:hover {
-      path {
-        stroke: #D1D1D1;
+
+    svg {
+      &:hover {
+        path {
+          stroke: #D1D1D1;
+        }
       }
     }
   }
-}
 
   .slider-arrow-prev {
     position: absolute;
     left: 0;
     top: 50%;
     width: unset !important;
+
     svg {
       &:hover {
         path {
@@ -1276,38 +1298,26 @@ font-size: 20px;
     margin-right: 40px;
     position: relative;
     border-top: #FFFFFF;
-    -webkit-mask-image:radial-gradient(circle 100px at 50% 0, #0000 50px, #000 0);
+    -webkit-mask-image: radial-gradient(circle 100px at 50% 0, #0000 50px, #000 0);
 
-    iframe {
-      width: 100%;
-      height: 100%;
+    @include before-xl() {
+      max-width: 400px;
+      padding: 60px 20px 30px;
+
+
     }
 
     @include before-md() {
-      width: 500px;
+      max-width: 400px;
+
     }
     @include before-sm() {
-      width: 299px;
+      max-width: 300px;
     }
   }
 
 }
 
-
-
-
-//.circle{
-//  position: absolute;
-//  top: 0;
-//  left: 38%;
-//  transform: translateY(-50%);
-//  opacity: 1.5;
-//  width: 120px;
-//  height: 110px;
-//  border-radius: 50%;
-//  background: url('../../assets/img/hero-background.png');
-//  background-repeat: no-repeat;
-//}
 .reviews__name {
   margin-bottom: 17px;
 

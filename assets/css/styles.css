@@ -1622,6 +1622,11 @@ table.price-table__table td, table.price-table__table th {
   max-width: 1300px;
   width: 100%;
 }
+@media screen and (max-width: 991px) {
+  .block__content_reviews {
+    padding: 0 0 0 10px;
+  }
+}
 
 .reviews__title {
   margin-bottom: 60px;
@@ -1636,11 +1641,12 @@ table.price-table__table td, table.price-table__table th {
 }
 
 .reviews__slider-wrapper {
-  max-width: 1300px;
+  max-width: 1140px;
   margin: 0 auto;
   display: flex;
   position: relative;
   overflow: visible;
+  width: 100%;
 }
 
 .reviews__slider {
@@ -1652,6 +1658,11 @@ table.price-table__table td, table.price-table__table th {
 .reviews__slider .slick-slide {
   opacity: 0;
 }
+@media screen and (max-width: 991px) {
+  .reviews__slider .slick-slide {
+    opacity: 1;
+  }
+}
 .reviews__slider .slick-active {
   opacity: 1;
 }
@@ -1662,9 +1673,14 @@ table.price-table__table td, table.price-table__table th {
   overflow: visible;
   padding: 0 60px;
 }
+@media screen and (max-width: 575px) {
+  .reviews__slider .slick-list {
+    padding: 0;
+  }
+}
 .reviews__slider .slider-arrow-next {
   position: absolute;
-  right: 12%;
+  right: 0;
   top: 50%;
   width: unset !important;
 }
@@ -1692,18 +1708,20 @@ table.price-table__table td, table.price-table__table th {
   border-top: #FFFFFF;
   -webkit-mask-image: radial-gradient(circle 100px at 50% 0, rgba(0, 0, 0, 0) 50px, #000 0);
 }
-.reviews__slider .reviews__slider-item iframe {
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 1199px) {
+  .reviews__slider .reviews__slider-item {
+    max-width: 400px;
+    padding: 60px 20px 30px;
+  }
 }
 @media screen and (max-width: 767px) {
   .reviews__slider .reviews__slider-item {
-    width: 500px;
+    max-width: 400px;
   }
 }
 @media screen and (max-width: 575px) {
   .reviews__slider .reviews__slider-item {
-    width: 299px;
+    max-width: 300px;
   }
 }
 
