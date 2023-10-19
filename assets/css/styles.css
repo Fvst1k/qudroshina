@@ -1961,11 +1961,11 @@ table.price-table__table td, table.price-table__table th {
 }
 
 .discounts {
-  padding: 50px 0;
-  margin-top: 160px;
+  padding: 190px 0 50px;
   background: url("../../assets/img/hero-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 90vh;
 }
 
 .block__content_discounts {
