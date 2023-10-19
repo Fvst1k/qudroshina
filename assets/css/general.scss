@@ -6,6 +6,11 @@ html, body {
   scroll-behavior: smooth;
 
 }
+.body {
+  &.active{
+    overflow: hidden;
+  }
+}
 
 img {
   width: 100%;

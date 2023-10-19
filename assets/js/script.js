@@ -2,14 +2,14 @@ $(document).ready(function () {
     $('.employees__slider').slick({
         dots: true,
         infinite: true,
-        centerMode:true,
+        centerMode: true,
         centerPadding: "0",
-        autoplay:true,
+        autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         variableWidth: true,
         speed: 1000,
-        draggable:false,
+        draggable: false,
         arrows: false,
         responsive: [
             {
@@ -58,14 +58,14 @@ $(document).ready(function () {
     $('.discounts__slider').slick({
         dots: false,
         infinite: true,
-        centerMode:true,
+        centerMode: true,
         centerPadding: "0",
-        autoplay:true,
+        autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         variableWidth: true,
         speed: 1000,
-        draggable:false,
+        draggable: false,
         arrows: true,
         prevArrow: `<button type="button" class="slick-prev slider-arrow-prev">
   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -86,24 +86,38 @@ $(document).ready(function () {
     });
 });
 
-let select = function (){
-let selectHeader = document.querySelectorAll('.calculation__select-header');
-let selectItem = document.querySelectorAll('.calculation__select-item');
-    selectHeader.forEach(item =>{
+
+let select = function () {
+    let selectHeader = document.querySelectorAll('.calculation__select-header');
+    let selectItem = document.querySelectorAll('.calculation__select-item');
+    selectHeader.forEach(item => {
         item.addEventListener('click', selectToggle)
     });
-    selectItem.forEach(item =>{
+    selectItem.forEach(item => {
         item.addEventListener('click', selectChoose)
     })
-    function selectToggle (){
+
+    function selectToggle() {
         this.parentElement.classList.toggle('select-active');
     }
-    function selectChoose(){
-     let text = this.innerText;
-     let select = this.closest('.calculation__select');
-     let currentText = select.querySelector('.calculation__select-current');
-     currentText.innerText = text;
-     select.classList.remove('select-active');
+
+    function selectChoose() {
+        let text = this.innerText;
+        let select = this.closest('.calculation__select');
+        let currentText = select.querySelector('.calculation__select-current');
+        currentText.innerText = text;
+        select.classList.remove('select-active');
     }
 };
 select();
+mobileMenu()
+
+function mobileMenu() {
+
+    document.querySelector('.header__mobile-btn').addEventListener("click", evt => {
+        document.querySelector('.header__mobile-btn').classList.toggle('active')
+        document.querySelector('.body').classList.toggle('active')
+        document.querySelector('.header__bg').classList.toggle('active')
+        document.querySelector('.header__mobile_menu').classList.toggle('active')
+    })
+}

@@ -25,10 +25,16 @@ Template Name: header
 
     <?php wp_head(); ?>
 </head>
-<body>
+<body class="body">
 <div class="wrapper">
+    <div class="header__bg"></div>
     <!-- Header -->
     <header class="header">
+
+        <nav class="header__mobile_menu">
+            <?php wp_nav_menu() ?>
+        </nav>
+
         <div class="block__content block__content_header">
             <div class="header__row">
                 <div class="header__logo hover_scale">
@@ -38,6 +44,7 @@ Template Name: header
                 <nav class="header__menu">
                     <?php wp_nav_menu() ?>
                 </nav>
+
                 <div class="header__links-row">
                     <div class="header__links-time">
                         <p class="header-link">24/7</p>
@@ -61,6 +68,13 @@ Template Name: header
                         <p class="header-link">+7 (812) 939-46-47</p>
 
                     </a>
+                </div>
+                <div class="header__mobile-btn hover_scale">
+                    <div class="header__mobile-rect header__mobile-rect_1"></div>
+                    <div class="header__mobile-rect header__mobile-rect_2"></div>
+                    <div class="header__mobile-rect header__mobile-rect_3"></div>
+                    <div class="header__mobile-rect header__mobile-rect_4"></div>
+
                 </div>
             </div>
         </div>
