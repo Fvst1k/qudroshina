@@ -1033,6 +1033,11 @@ a {
     white-space: unset;
   }
 }
+@media screen and (max-width: 575px) {
+  .booking__card-title {
+    font-size: 32px;
+  }
+}
 
 .booking__card-text {
   margin-bottom: 40px;
@@ -1059,6 +1064,13 @@ a {
   font-family: "Prosto One", sans-serif;
   font-size: 24px;
   line-height: 1.2;
+}
+@media screen and (max-width: 575px) {
+  .booking__phone {
+    font-size: 16px;
+    max-width: 280px;
+    width: 100%;
+  }
 }
 
 .booking__tread-img {
@@ -1097,10 +1109,20 @@ a {
   font-size: 48px;
   line-height: 1.2;
 }
+@media screen and (max-width: 575px) {
+  .price-table__title {
+    font-size: 32px;
+  }
+}
 
 .price-table__subtitle {
   font-size: 24px;
   line-height: 1.2;
+}
+@media screen and (max-width: 575px) {
+  .price-table__subtitle {
+    font-size: 20px;
+  }
 }
 
 .mobile-table {
@@ -1207,6 +1229,16 @@ table.price-table__table td, table.price-table__table th {
   font-size: 48px;
   line-height: 1.2;
 }
+@media screen and (max-width: 767px) {
+  .calculation__title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .calculation__title {
+    font-size: 24px;
+  }
+}
 
 .calculation__subtitle {
   margin-bottom: 60px;
@@ -1214,6 +1246,16 @@ table.price-table__table td, table.price-table__table th {
   width: 100%;
   font-size: 24px;
   line-height: 1.4;
+}
+@media screen and (max-width: 767px) {
+  .calculation__subtitle {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .calculation__subtitle {
+    font-size: 18px;
+  }
 }
 
 .calculation__row {
@@ -1235,6 +1277,17 @@ table.price-table__table td, table.price-table__table th {
   opacity: 1;
   box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
   margin: 0 15px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .calculation__calculator {
+    max-width: 345px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .calculation__row {
+    flex-wrap: wrap;
+  }
 }
 
 .calculation__img {
@@ -1349,11 +1402,29 @@ table.price-table__table td, table.price-table__table th {
   justify-content: space-between;
   align-items: stretch;
 }
+@media screen and (max-width: 991px) {
+  .calculation__select_5 {
+    max-width: unset;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .calculation__select_5 {
+    max-width: 246px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .calculation__select-title_5 {
+    max-width: 280px;
+    width: 100%;
+  }
+}
 
 .form_radio_btn {
   padding-bottom: 10px;
   display: flex;
-  max-width: 80px;
+  max-width: 60px;
   width: 100%;
 }
 
@@ -1484,11 +1555,21 @@ table.price-table__table td, table.price-table__table th {
   font-size: 48px;
   line-height: 1.2;
 }
+@media screen and (max-width: 575px) {
+  .employees__title {
+    font-size: 32px;
+  }
+}
 
 .employees__subtitle {
   margin-bottom: 50px;
   font-size: 24px;
   line-height: 1.2;
+}
+@media screen and (max-width: 575px) {
+  .employees__subtitle {
+    font-size: 20px;
+  }
 }
 
 .employees__slider-item {
@@ -1542,6 +1623,11 @@ table.price-table__table td, table.price-table__table th {
   font-family: "Prosto One", sans-serif;
   font-size: 48px;
   line-height: 1.2;
+}
+@media screen and (max-width: 575px) {
+  .reviews__title {
+    font-size: 32px;
+  }
 }
 
 .reviews__slider-wrapper {
