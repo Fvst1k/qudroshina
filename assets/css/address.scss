@@ -1,0 +1,128 @@
+.address {
+  position: relative;
+  min-height: 90vh;
+}
+.block__content_address {
+  padding: 265px 20px 70px;
+  @include before-sm(){
+    padding: 200px 30px 40px;
+  }
+
+}
+.address__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.8;
+  img {
+    width: 100%;
+    height: 100%;
+
+  }
+  @include before-sm(){
+    opacity: 1;
+    width: 1000px;
+
+
+  }
+
+}
+.address__bg_opacity {
+  opacity: 0.5;
+  @include before-md(){
+    top: 0;
+    right: -30%;
+    bottom: unset;
+    left: unset;
+    width: 1200px;
+
+  }
+  @include before-sm(){
+    top: 25%;
+    right: 15%;
+    left: unset;
+    width: 630px;
+    height: 900px;
+    transform: rotate(33deg);
+    opacity: 1;
+  }
+}
+
+.address__title{
+  margin-bottom: 60px;
+}
+
+.address__table-1 {
+  display: grid;
+  margin-bottom: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  @include before-md(){
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+.address__table-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  @include before-md(){
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+
+.address__table-city {
+text-align: center;
+  padding: 20px;
+  grid-area: 1 / 1 / 2 / 4;
+  border-radius: 10px;
+  border-left: 1px solid #E78B2F;
+  background: #FFF;
+  @include before-md(){
+   grid-area: unset;
+  }
+}
+.address__city-name{
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.address__city-link{
+  color: #E78B2F;
+}
+.address__table-address{
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 1px solid #E78B2F;
+  background: #FFF;
+  @include before-md(){
+    text-align: center;
+  }
+}
+.address__address-name{
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.address__table-arrow{
+  @include before-md(){
+ align-items: center;
+    justify-content: center;
+  }
+}
+.address__address-link{
+  margin-right: 7px;
+  color: #E78B2F;
+}
+.address__table-arrow{
+  display: flex;
+}

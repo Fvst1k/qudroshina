@@ -63,7 +63,7 @@
 .blog__table{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   a{
@@ -92,6 +92,7 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   time{
+    margin: auto 0;
     color: #8D8D8D;
     font-size: 13px;
   }
