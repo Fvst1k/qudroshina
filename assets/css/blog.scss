@@ -1,0 +1,121 @@
+.blog {
+  position: relative;
+  min-height: 90vh;
+}
+.block__content_blog {
+  padding: 265px 20px 70px;
+  @include before-sm(){
+    padding: 200px 30px 40px;
+  }
+
+}
+.blog__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.8;
+  img {
+    width: 100%;
+    height: 100%;
+
+  }
+  @include before-sm(){
+    opacity: 1;
+    width: 1000px;
+
+
+  }
+
+}
+.blog__bg_opacity {
+  opacity: 0.5;
+  @include before-md(){
+    top: 0;
+    right: -30%;
+    bottom: unset;
+    left: unset;
+    width: 1200px;
+
+  }
+  @include before-sm(){
+    top: 25%;
+    right: 15%;
+    left: unset;
+    width: 630px;
+    height: 900px;
+    transform: rotate(33deg);
+    opacity: 1;
+  }
+}
+.blog__title{
+  margin-bottom: 100px;
+  @include before-sm(){
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+
+}
+
+.blog__table{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  a{
+    display: block;
+  }
+  @include before-sm(){
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    grid-row-gap: 80px;
+  }
+}
+.blog__table-item{
+  display: block;
+  word-wrap: break-word;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  &:hover{
+    transform: scale(1.03);
+  }
+}
+.blog__item-content{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  time{
+    color: #8D8D8D;
+    font-size: 13px;
+  }
+}
+.blog__item-img{
+  border-top-right-radius:10px ;
+  border-top-left-radius:10px ;
+  display:block;
+  max-height: 200px;
+  height: 100%;
+  img{
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.blog__item-title{
+  color: #FF8A63;
+  margin-bottom: 23px;
+}
+.blog__item-text{
+  margin-bottom: 30px;
+}
+
