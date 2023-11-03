@@ -785,15 +785,18 @@ a {
   }
 }
 
-.about-us__text span {
+.about-us__item p {
+  margin-bottom: 15px;
+}
+.about-us__item p span {
   font-weight: 500;
   font-size: 24px;
 }
 @media screen and (max-width: 575px) {
-  .about-us__text {
+  .about-us__item p {
     font-size: 16px;
   }
-  .about-us__text span {
+  .about-us__item p span {
     font-size: 18px;
   }
 }
@@ -918,14 +921,20 @@ a {
 
 .advantages__items {
   margin-left: 35px;
-  display: flex;
-  gap: 70px;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  gap: 100px 70px;
+  grid-template-columns: repeat(4, 1fr);
 }
 @media screen and (max-width: 991px) {
   .advantages__items {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .advantages__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 40px;
   }
 }
 
@@ -1844,7 +1853,12 @@ table.price-table__table td, table.price-table__table th {
   }
 }
 
-.contacts__grid-item p, .contacts__grid-item a {
+.contacts__item-1-info {
+  display: flex;
+  flex-flow: column;
+}
+
+.contacts__grid-item p, .contacts__grid-item a, .contacts__grid-item img {
   line-height: 1.2;
   margin-bottom: 12px;
 }
@@ -1901,7 +1915,12 @@ table.price-table__table td, table.price-table__table th {
   line-height: 1.2;
 }
 
-.contacts__item-3-socials img {
+.contacts__item-3-socials {
+  display: grid;
+  grid-template-columns: repeat(4, 19px);
+  gap: 12px;
+}
+.contacts__item-3-socials img, .contacts__item-3-socials a {
   width: 19px;
   height: 19px;
 }

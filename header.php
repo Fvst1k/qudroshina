@@ -24,6 +24,7 @@ Template Name: header
     <title>template</title>
 
     <?php wp_head(); ?>
+    <?php $front_id = get_option('page_on_front'); ?>
 </head>
 <body class="body">
 <div class="wrapper">
@@ -49,7 +50,7 @@ Template Name: header
                     <div class="header__links-time">
                         <p class="header-link">24/7</p>
                     </div>
-                    <a href="tel:+79999999999" class="header__links-phone hover_scale">
+                    <a href="tel:<?php the_field('info-num-link', $front_id); ?>" class="header__links-phone hover_scale">
                         <div class="header__links-icon">
                             <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +66,7 @@ Template Name: header
                                 </defs>
                             </svg>
                         </div>
-                        <p class="header-link">+7 (812) 939-46-47</p>
+                        <p class="header-link"><?php the_field('info-num', $front_id); ?></p>
 
                     </a>
                 </div>

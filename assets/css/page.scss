@@ -19,24 +19,25 @@
     max-width: unset;
 
   }
-  @include before-lg(){
+
+  @include before-lg() {
     top: unset;
     right: -40%;
   }
   @include before-md() {
     top: unset;
     right: -30%;
-    img{
+    img {
       width: 800px;
     }
   }
-  @include before-sm(){
+  @include before-sm() {
     right: -40%;
-    img{
+    img {
       width: 800px;
     }
   }
-  @media screen and (max-width: 425px){
+  @media screen and (max-width: 425px) {
     right: -55%;
   }
 }
@@ -295,7 +296,9 @@
   }
 }
 
-.about-us__text {
+.about-us__item p {
+  margin-bottom: 15px;
+
   span {
     font-weight: 500;
     font-size: 24px;
@@ -430,12 +433,16 @@
 
 .advantages__items {
   margin-left: 35px;
-  display: flex;
-  gap: 70px;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  gap: 100px 70px;
+  grid-template-columns: repeat(4, 1fr);
   @include before-lg() {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 50px;
+  }
+  @include before-md() {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 40px;
   }
 
 }
@@ -938,9 +945,10 @@ table.price-table__table td, table.price-table__table th {
 .calculation__select.select-active .calculation__select-body {
   display: block;
 }
+
 .calculation {
   .calculation__select {
-    @include before-lg(){
+    @include before-lg() {
       width: 100%;
       max-width: unset;
     }
@@ -955,7 +963,7 @@ table.price-table__table td, table.price-table__table th {
 .calculation__select_2 {
   max-width: 173px;
   width: 100%;
-  @include before-lg(){
+  @include before-lg() {
     margin-top: 5px;
   }
 }
@@ -1237,7 +1245,7 @@ table.price-table__table td, table.price-table__table th {
 .block__content_reviews {
   max-width: 1300px;
   width: 100%;
-  @include before-lg(){
+  @include before-lg() {
     padding: 0 0 0 10px;
   }
 }
@@ -1270,7 +1278,7 @@ table.price-table__table td, table.price-table__table th {
 
   .slick-slide {
     opacity: 0;
-    @include before-lg(){
+    @include before-lg() {
       opacity: 1;
     }
   }
@@ -1286,7 +1294,7 @@ table.price-table__table td, table.price-table__table th {
   .slick-list {
     overflow: visible;
     padding: 0 60px;
-    @include before-sm(){
+    @include before-sm() {
       padding: 0;
     }
 
@@ -1352,10 +1360,12 @@ table.price-table__table td, table.price-table__table th {
     }
   }
 }
-.white-el-wrapper{
+
+.white-el-wrapper {
   position: relative;
 }
-.white-el{
+
+.white-el {
   position: absolute;
   top: 10%;
   left: 35%;
@@ -1418,18 +1428,18 @@ table.price-table__table td, table.price-table__table th {
     grid-row-gap: 20px;
   }
 }
-
+.contacts__item-1-info {
+  display: flex;
+  flex-flow:  column;
+}
 .contacts__grid-item {
 
-  p, a {
+  p, a, img {
 
     line-height: 1.2;
     margin-bottom: 12px;
   }
 
-  .contacts__grid-item_1 {
-
-  }
 
   .contacts__grid-item_2 {
     p {
@@ -1472,6 +1482,7 @@ table.price-table__table td, table.price-table__table th {
   }
 
   .contacts__phone {
+
     &:before {
       content: "";
       display: inline-block;
@@ -1501,7 +1512,10 @@ table.price-table__table td, table.price-table__table th {
 
 
 .contacts__item-3-socials {
-  img {
+  display: grid;
+  grid-template-columns: repeat(4, 19px);
+  gap: 12px;
+  img, a {
     width: 19px;
     height: 19px;
   }
@@ -1511,22 +1525,25 @@ table.price-table__table td, table.price-table__table th {
 /*=================================================/CONTACTS======================================================*/
 
 /*=================================================BOOKING-PLUGIN======================================================*/
- .booking-plugin {
-   margin: 60px 0;
+.booking-plugin {
+  margin: 60px 0;
 
- }
- .block__content_booking-plugin {
+}
 
- }
- .bookly-form {
-   background: #FFFFFF;
-   border-radius: 15px;
-   box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
-   padding: 20px;
- }
- .bookly-table {
+.block__content_booking-plugin {
+
+}
+
+.bookly-form {
+  background: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
+  padding: 20px;
+}
+
+.bookly-table {
 
 
- }
+}
 
 /*=================================================/BOOKING-PLUGIN======================================================*/
