@@ -99,6 +99,11 @@ Template Name: home
             </div>
         </div>
     </section>
+    <section class="booking-plugin">
+        <div class="block__content block__content_booking-plugin">
+            <?php echo do_shortcode('[bookly-form]') ?>
+        </div>
+    </section>
     <section class="advantages">
         <div class="block__content block__content_advantages">
             <h2 class="advantages__title">МЫ ЛУЧШИЕ ПОТОМУ ЧТО</h2>

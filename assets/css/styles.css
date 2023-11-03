@@ -347,10 +347,12 @@ a {
     z-index: -1;
     opacity: 0;
     transition: ease-in-out all 0.5s;
+    transform: translateX(-100%);
   }
   .header__mobile_menu.active {
     z-index: 60;
     opacity: 1;
+    transform: translateX(0);
   }
   .header__mobile_menu .menu-menu-container {
     width: 100%;
@@ -1905,9 +1907,22 @@ table.price-table__table td, table.price-table__table th {
 }
 
 /*=================================================/CONTACTS======================================================*/
+/*=================================================BOOKING-PLUGIN======================================================*/
+.booking-plugin {
+  margin: 60px 0;
+}
+
+.bookly-form {
+  background: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 4px 4px 20px 0 rgba(77, 77, 77, 0.34);
+  padding: 20px;
+}
+
+/*=================================================/BOOKING-PLUGIN======================================================*/
 .services {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .block__content_services {
@@ -1971,7 +1986,7 @@ table.price-table__table td, table.price-table__table th {
 }
 
 .services__tablet {
-  margin: 60px auto 0 auto;
+  margin: 60px auto 0 auto !important;
   max-width: 1010px;
   width: 100%;
   display: grid;
@@ -2039,6 +2054,98 @@ table.price-table__table td, table.price-table__table th {
   }
 }
 
+.services-single__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-single__text {
+  margin-top: 60px;
+  padding-right: 25px;
+  max-width: 600px;
+  width: 100%;
+}
+.services-single__text p {
+  margin-bottom: 20px;
+}
+
+.services-single__img-group {
+  position: relative;
+}
+
+.services-single__img {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.services-single__img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.services-single__img_absolute {
+  position: absolute;
+  width: 100%;
+  max-width: 240px;
+  border-radius: 5px;
+  overflow: hidden;
+  bottom: -60%;
+  left: -30%;
+  max-height: 340px;
+  height: 100%;
+}
+.services-single__img_absolute img {
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+}
+
+.services-single__bg-elem {
+  position: absolute;
+  width: 129px;
+  height: 129px;
+  border: 2px solid #E78B2F;
+  left: 91px;
+  bottom: -65px;
+}
+
+@media screen and (max-width: 767px) {
+  .block__content_services {
+    padding: 170px 20px 70px;
+  }
+  .services-single__wrapper {
+    margin-top: 30px;
+    flex-flow: column-reverse;
+  }
+  .services-single__img-group {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+  .services-single__img_absolute {
+    position: relative;
+    overflow: unset;
+    left: unset;
+    bottom: unset;
+    margin-top: 30px;
+  }
+  .services-single__img_absolute img {
+    position: relative;
+  }
+  .services-single__bg-elem {
+    display: none;
+  }
+  .services-single__text {
+    padding: 30px 10px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+  }
+}
 .blog {
   position: relative;
   min-height: 90vh;
