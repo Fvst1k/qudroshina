@@ -27,17 +27,17 @@ if ($myposts) { ?>
 
         <h2 class="services__title tl__title"><?php the_title();?></h2>
 
-        <ul class="address__table-1 address__table-1_group">
+        <div class="address__table-1 address__table-1_group">
 
             <?php
             foreach ($myposts as $post) {
                 setup_postdata($post);
                 ?>
-                <li class="services__tablet-item hover_scale">
-                    <a href="<?php the_permalink($post); ?>" class="services__tablet-item-link">
+              <a href="<?php the_permalink(); ?>" class="services__tablet-item hover_scale">
+                    <div href="" class="services__tablet-item-link">
                         <h4 class="services__tablet-title"><?php the_title(); ?></h4>
                         <div class="services__tablet-group">
-                            <a class="services__tablet-link">Подробнее</a>
+                            <p class="services__tablet-link">Подробнее</p>
                             <div class="services__tablet-arrow">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -49,14 +49,14 @@ if ($myposts) { ?>
                                 </svg>
                             </div>
                         </div>
-                    </a>
-                </li>
+                    </div>
+                </a>
                 <?php
             }
             }
             wp_reset_postdata(); ?>
 
-        </ul>
+        </div>
     </div>
 
     </div>

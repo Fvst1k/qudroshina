@@ -199,6 +199,25 @@ text-align: center;
     }
   }
 }
+.solo-address__btn-down {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include before-md(){
+    flex-flow: column;
+  }
 
+}
+.solo-address__btn_left {
+  margin-right: 30px;
+  @include before-md(){
+    margin-right:  0;
+    margin-bottom: 15px;
+  }
+}
+.services__tablet-group {
+  margin-top: 15px;
+}
 
 //================================== /solo-address ===============================

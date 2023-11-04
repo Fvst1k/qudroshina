@@ -49,6 +49,14 @@
             ?>
 
         </div>
+        <div class="solo-address__btn-down">
+            <a href="<?php the_field('solo-address-left-link'); ?>"
+               class="hero__btn solo-address__btn_left"><?php the_field('solo-address-left'); ?></a>
+            <a href="tel:<?php the_field('solo-address-right-link');?>"
+               class="hero__btn"><?php the_field('solo-address-right'); ?></a>
+        </div>
+
+
 
     </div>
 </section>

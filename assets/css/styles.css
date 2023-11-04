@@ -2575,6 +2575,32 @@ table.price-table__table td, table.price-table__table th {
   }
 }
 
+.solo-address__btn-down {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .solo-address__btn-down {
+    flex-flow: column;
+  }
+}
+
+.solo-address__btn_left {
+  margin-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .solo-address__btn_left {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.services__tablet-group {
+  margin-top: 15px;
+}
+
 .discounts {
   padding: 190px 0 50px;
   background: url("../../assets/img/hero-background.png");
