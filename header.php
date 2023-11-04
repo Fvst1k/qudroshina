@@ -67,7 +67,6 @@ Template Name: header
                             </svg>
                         </div>
                         <p class="header-link"><?php the_field('info-num', $front_id); ?></p>
-
                     </a>
                 </div>
                 <div class="header__mobile-btn hover_scale">

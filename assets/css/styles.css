@@ -231,6 +231,10 @@ a {
   transform: scale(1.02);
 }
 
+p strong {
+  font-weight: 700;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -442,6 +446,7 @@ a {
 .header__links-phone {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .header__links-time {
@@ -803,6 +808,8 @@ a {
 
 .about-us__img {
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .about-us__img_1 {
@@ -937,6 +944,13 @@ a {
     gap: 50px 40px;
   }
 }
+@media screen and (max-width: 575px) {
+  .advantages__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    margin-left: 0;
+  }
+}
 
 .advantages__item {
   position: relative;
@@ -998,6 +1012,11 @@ a {
   display: flex;
   flex-direction: column;
   padding: 30px 30px 0 0;
+}
+@media screen and (max-width: 575px) {
+  .booking__card-wrapper {
+    padding: 30px 0;
+  }
 }
 
 .booking__img-wheels {
@@ -1172,7 +1191,11 @@ a {
 .mobile-table {
   margin-top: 60px;
   border-radius: 20px;
+  overflow: hidden;
+}
+.mobile-table img {
   overflow-x: scroll;
+  min-width: 700px;
 }
 .mobile-table::-webkit-scrollbar {
   display: none;
@@ -1256,6 +1279,10 @@ table.price-table__table td, table.price-table__table th {
 .price-table__table-service_7 {
   font-weight: 600;
   line-height: 1.2;
+}
+
+.hero__btn_price {
+  margin: 30px auto 0;
 }
 
 /*=================================================/PRICE-TABLE======================================================*/
@@ -1919,6 +1946,10 @@ table.price-table__table td, table.price-table__table th {
   display: grid;
   grid-template-columns: repeat(4, 19px);
   gap: 12px;
+  cursor: pointer;
+}
+.contacts__item-3-socials:hover {
+  transform: translateY(-2px);
 }
 .contacts__item-3-socials img, .contacts__item-3-socials a {
   width: 19px;
@@ -1939,6 +1970,16 @@ table.price-table__table td, table.price-table__table th {
 }
 
 /*=================================================/BOOKING-PLUGIN======================================================*/
+.prices__img-wrapper {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  margin-top: 20px;
+}
+.prices__img-wrapper img {
+  margin-top: 30px;
+}
+
 .services {
   position: relative;
   min-height: 100vh;
@@ -2368,9 +2409,14 @@ table.price-table__table td, table.price-table__table th {
   display: grid;
   margin-bottom: 50px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+}
+@media screen and (max-width: 991px) {
+  .address__table-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (max-width: 767px) {
   .address__table-1 {
@@ -2381,7 +2427,7 @@ table.price-table__table td, table.price-table__table th {
 .address__table-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
@@ -2410,6 +2456,11 @@ table.price-table__table td, table.price-table__table th {
   font-size: 24px;
   font-weight: 500;
 }
+@media screen and (max-width: 767px) {
+  .address__city-name {
+    font-size: 20px;
+  }
+}
 
 .address__city-link {
   color: #E78B2F;
@@ -2424,6 +2475,7 @@ table.price-table__table td, table.price-table__table th {
 @media screen and (max-width: 767px) {
   .address__table-address {
     text-align: center;
+    margin-left: 30px;
   }
 }
 
@@ -2431,6 +2483,11 @@ table.price-table__table td, table.price-table__table th {
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .address__address-name {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2447,6 +2504,75 @@ table.price-table__table td, table.price-table__table th {
 
 .address__table-arrow {
   display: flex;
+}
+
+.address__table-1_group {
+  margin-top: 30px !important;
+}
+
+.solo-address__subtitle {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 575px) {
+  .solo-address__subtitle p, .solo-address__subtitle strong {
+    font-size: 14px;
+  }
+}
+
+.solo-address__num-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solo-address__num-link {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.solo-address_table {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.solo-address_table p {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .solo-address_table {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .solo-address_table {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+.solo-address_item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.solo-address_item img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 575px) {
+  .solo-address_item-text {
+    align-items: center;
+  }
+  .solo-address_item-text p, .solo-address_item-text strong {
+    font-size: 14px;
+  }
 }
 
 .discounts {
@@ -2532,6 +2658,24 @@ table.price-table__table td, table.price-table__table th {
   line-height: 1.2;
 }
 
+/*================================================= PRICES-SINGLE ======================================================*/
+.prices__img-wrapper {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  margin-top: 20px;
+}
+.prices__img-wrapper img {
+  margin-top: 30px;
+  min-width: 500px;
+}
+@media screen and (max-width: 767px) {
+  .prices__img-wrapper {
+    overflow-x: scroll;
+  }
+}
+
+/*================================================= /PRICES-SINGLE ======================================================*/
 .footer {
   background: #232323;
   margin-top: auto;

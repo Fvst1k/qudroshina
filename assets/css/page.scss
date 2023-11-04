@@ -314,6 +314,8 @@
 
 .about-us__img {
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 
 }
 
@@ -444,6 +446,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 50px 40px;
   }
+  @include before-sm(){
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    margin-left: 0;
+  }
 
 }
 
@@ -511,6 +518,9 @@
   display: flex;
   flex-direction: column;
   padding: 30px 30px 0 0;
+  @include before-sm(){
+    padding: 30px 0;
+  }
 }
 
 .booking__img-wheels {
@@ -527,6 +537,7 @@
 
 
   }
+
 
 }
 
@@ -557,9 +568,8 @@
   @include before-lg() {
     width: 100%;
     padding: 35px 35px 160px 35px;
-
-
   }
+
 }
 
 .booking__card-info {
@@ -681,11 +691,18 @@
 .mobile-table {
   margin-top: 60px;
   border-radius: 20px;
-  overflow-x: scroll;
+  overflow: hidden;
+  img {
+    overflow-x: scroll;
+    min-width: 700px;
+  }
+
+
 
   &::-webkit-scrollbar {
     display: none;
   }
+
 
   @include before-lg() {
     overflow-x: scroll;
@@ -789,6 +806,9 @@ table.price-table__table td, table.price-table__table th {
 
   font-weight: 600;
   line-height: 1.2;
+}
+.hero__btn_price {
+  margin: 30px auto 0;
 }
 
 /*=================================================/PRICE-TABLE======================================================*/
@@ -1515,6 +1535,10 @@ table.price-table__table td, table.price-table__table th {
   display: grid;
   grid-template-columns: repeat(4, 19px);
   gap: 12px;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-2px);
+  }
   img, a {
     width: 19px;
     height: 19px;
@@ -1547,3 +1571,17 @@ table.price-table__table td, table.price-table__table th {
 }
 
 /*=================================================/BOOKING-PLUGIN======================================================*/
+
+.prices__img-wrapper {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  margin-top: 20px;
+  img {
+    margin-top: 30px;
+  }
+}
+
+
+
+

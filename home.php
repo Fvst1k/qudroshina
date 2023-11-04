@@ -144,7 +144,7 @@ Template Name: home
                                               stroke-linejoin="round"/>
                                     </svg>
                                     <a href="tel:<?php the_field('booking-phone-link'); ?>"
-                                       class="booking__phone"><?php the_field('booking-phone'); ?></a>
+                                       class="booking__phone hover_scale"><?php the_field('booking-phone'); ?></a>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +276,10 @@ Template Name: home
                         </table>
                     </div>
 
+                    <a href="<?php the_permalink(275);?>"
+                       class="hero__btn hero__btn_price">Смотреть полный прайс</a>
                 </div>
+
             </section>
         <?php }; ?>
         <?php if (get_field('calculation-visible')) { ?>
@@ -483,9 +486,8 @@ Template Name: home
     </section>
 <?php }; ?>
     <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255808.70669704824!2d29.76506029963684!3d59.94034693347934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1697384424490!5m2!1sru!2sru"
-                width="100%" height="650px" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6a53c984f88b1d5500b7221c149089d50c445600b3cc80493419b90cb99b1ba9&amp;source=constructor"
+                width="100%" height="653" frameborder="0"></iframe>
     </section>
 <?php if (get_field('contacts-visible')) { ?>
     <section class="contacts">
@@ -499,8 +501,9 @@ Template Name: home
                         if (have_rows('contacts-create-address')):
                             while (have_rows('contacts-create-address')) : the_row(); ?>
                                 <p class="contacts__info-first-address">
-                                <?php the_sub_field('contacts-address'); ?>
+                                    <?php the_sub_field('contacts-address'); ?>
                                 </p>
+
                                 <a href="tel:<?php the_sub_field('contacts-num-link'); ?>" class="contacts__phone">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                          fill="none">
@@ -510,6 +513,7 @@ Template Name: home
                                     </svg>
                                     <?php the_sub_field('contacts-num'); ?>
                                 </a>
+
                             <?php endwhile;
                         else :
                         endif;
@@ -522,7 +526,7 @@ Template Name: home
                     <?php
                     if (have_rows('contacts-create-time')):
                         while (have_rows('contacts-create-time')) : the_row(); ?>
-                           <p><?php the_sub_field('contacts-time'); ?></p>
+                            <p><?php the_sub_field('contacts-time'); ?></p>
                         <?php endwhile;
                     else :
                     endif;
@@ -534,8 +538,8 @@ Template Name: home
                         <?php
                         if (have_rows('contacts-create-sosial')):
                             while (have_rows('contacts-create-sosial')) : the_row(); ?>
-                                <a href="<?php the_sub_field('contacts-sosial-link');?>">
-                                    <img src="<?php the_sub_field('contacts-sosial-icon');?>"
+                                <a class="" href="<?php the_sub_field('contacts-sosial-link'); ?>">
+                                    <img src="<?php the_sub_field('contacts-sosial-icon'); ?>"
                                          alt="social">
                                 </a>
                             <?php endwhile;

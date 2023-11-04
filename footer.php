@@ -12,9 +12,9 @@
                 <a class="footer__politics" href="#">Политика обработки персональных данных</a>
             </div>
 
-            <a href="tel:<?php the_field('info-num-link', $front_id); ?>" class="header__links-phone hover_scale">
-                <p class="header-link header-link_footer"><?php the_field('info-num', $front_id); ?></p>
-            </a>
+                <a href="tel:<?php the_field('info-num-link', $front_id); ?>" class="header__links-phone hover_scale">
+                    <p class="header-link header-link_footer"><?php the_field('info-num', $front_id); ?></p>
+                </a>
 
         </div>
     </div>

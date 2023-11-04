@@ -60,9 +60,13 @@
   display: grid;
   margin-bottom: 50px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  @include before-lg(){
+    grid-template-columns: repeat(2, 1fr);
+
+  }
   @include before-md(){
     grid-template-columns: repeat(1, 1fr);
 
@@ -71,7 +75,7 @@
 .address__table-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   @include before-md(){
@@ -95,6 +99,9 @@ text-align: center;
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 500;
+  @include before-md(){
+    font-size: 20px;
+  }
 }
 .address__city-link{
   color: #E78B2F;
@@ -106,12 +113,16 @@ text-align: center;
   background: #FFF;
   @include before-md(){
     text-align: center;
+    margin-left: 30px;
   }
 }
 .address__address-name{
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 500;
+  @include before-md(){
+    font-size: 20px;
+  }
 }
 .address__table-arrow{
   @include before-md(){
@@ -126,3 +137,68 @@ text-align: center;
 .address__table-arrow{
   display: flex;
 }
+.address__table-1_group {
+  margin-top: 30px !important;
+}
+//================================== solo-address ===============================
+.solo-address__subtitle {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  @include before-sm(){
+    p, strong {
+      font-size: 14px;
+    }
+
+  }
+
+}
+.solo-address__num-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.solo-address__num-link {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.solo-address_table {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  p {
+    margin-bottom: 10px;
+  }
+  @include before-md(){
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  @include before-sm(){
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+.solo-address_item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  img {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+.solo-address_item-text {
+  @include before-sm(){
+    align-items: center;
+    p,strong {
+      font-size: 14px;
+    }
+  }
+}
+
+
+//================================== /solo-address ===============================
