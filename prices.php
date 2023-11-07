@@ -19,7 +19,7 @@ Template Name: price
             <?php
             if( have_rows('prices-repeater') ):
                 while ( have_rows('prices-repeater') ) : the_row(); ?>
-                    <img src="<?php the_sub_field('prices-img') ;?>" alt="price">
+                    <img src="<?php the_sub_field('prices-img') ;?>" alt="<?php the_sub_field('prices-img-alt');?>" title="<?php the_sub_field('prices-img-title');?>">
                <?php endwhile;
             else :
             endif;

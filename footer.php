@@ -1,5 +1,7 @@
 <!-- Footer -->
 <footer class="footer">
+    <?php wp_head(); ?>
+    <?php $front_id = get_option('page_on_front'); ?>
     <div class="block__content block__content_footer">
         <div class="header__row footer__row">
             <div class="header__logo hover_scale">

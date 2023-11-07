@@ -8,7 +8,7 @@ Template Name: home
 <?php if (get_field('hero-block-visible')) { ?>
     <section class="hero">
         <div class="hero-bg">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/protector-hero.png" alt="bg">
+            <img decoding="async" src="<?php echo get_template_directory_uri() ?>/assets/img/protector-hero.png" alt="bg">
         </div>
         <div class="block__content block__content_hero ">
             <div class="hero__text">
@@ -20,7 +20,7 @@ Template Name: home
                 <a href="<?php the_field('hero-block-btn-link'); ?>"
                    class="hero__btn"><?php the_field('hero-block-btn'); ?></a>
                 <div class="hero__car-img">
-                    <img src="<?php the_field('hero-block-img'); ?>" alt="car">
+                    <img decoding="async"  src="<?php the_field('hero-block-img'); ?>" alt="<?php the_field('hero-block-img-alt');?>" title="<?php the_field('hero-block-img-title');?>">
                 </div>
             </div>
 
@@ -38,10 +38,10 @@ Template Name: home
 <?php }; ?>
     <div class="wrapper__protector-bg">
         <div class="wrapper__protector-bg_img wrapper__protector-bg_img-1">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/main-bg.png" alt="car">
+            <img decoding="async" src="<?php echo get_template_directory_uri() ?>/assets/img/main-bg.png" alt="car">
         </div>
         <div class="wrapper__protector-bg_img wrapper__protector-bg_img-2">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/main-bg.png" alt="car">
+            <img decoding="async" src="<?php echo get_template_directory_uri() ?>/assets/img/main-bg.png" alt="car">
         </div>
 
         <?php if (get_field('about-us-visible')) { ?>
@@ -58,18 +58,18 @@ Template Name: home
                         </div>
                         <div class="about-us__item about-us__item_3">
                             <div class="about-us__img about-us__img_1">
-                                <img src="<?php the_field('about-us-img-3'); ?>" alt="car">
+                                <img decoding="async" src="<?php the_field('about-us-img-3'); ?>" alt="<?php the_field('about-us-img-3-alt');?>" title="<?php the_field('about-us-img-3-title');?>">
                                 <div class="el"></div>
                             </div>
                         </div>
                         <div class="about-us__item about-us__item_4">
                             <div class="about-us__img about-us__img_2">
-                                <img src="<?php the_field('about-us-img-1'); ?>" alt="car">
+                                <img decoding="async" src="<?php the_field('about-us-img-1'); ?>" alt="<?php the_field('about-us-img-1-alt');?>" title="<?php the_field('about-us-img-1-title');?>">
                             </div>
                         </div>
                         <div class="about-us__item about-us__item_5">
                             <div class="about-us__img about-us__img_3">
-                                <img src="<?php the_field('about-us-img-2'); ?>" alt="car">
+                                <img decoding="async" src="<?php the_field('about-us-img-2'); ?>" alt="<?php the_field('about-us-img-2-alt');?>" title="<?php the_field('about-us-img-2-title');?>">
                             </div>
                         </div>
                         <div class="about-us__item about-us__item_6">
@@ -116,11 +116,11 @@ Template Name: home
                 <div class="block__content block__content_booking">
                     <div class="booking__card-wrapper">
                         <div class="booking__img-wheels">
-                            <img src="<?php the_field('booking-img'); ?>" alt="wheels">
+                            <img decoding="async" src="<?php the_field('booking-img'); ?>" alt="<?php the_field('booking-img-alt');?>" title="<?php the_field('booking-img-title');?>">
                         </div>
                         <div class="booking__card">
                             <div class="booking__tread-img">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/tread-booking.png"
+                                <img decoding="async" src="<?php echo get_template_directory_uri() ?>/assets/img/tread-booking.png"
                                      alt="wheels">
                             </div>
                             <div class="booking__card-info">
@@ -159,7 +159,7 @@ Template Name: home
                     <p class="price-table__subtitle"><?php the_field('price-subtitle'); ?></p>
                     <div class="mobile-table">
                         <table class="price-table__table ">
-                            <img src="<?php the_field('price-img'); ?>" alt="price">
+                            <img decoding="async" src="<?php the_field('price-img'); ?>" alt="<?php the_field('price-img-alt');?>" title="<?php the_field('price-img-title');?>">
                             <!--                        <tbody>-->
                             <!--                        <tr class="price-table__table-row-1">-->
                             <!--                            <th class="price-table__table-col-1">Услуги</th>-->
@@ -421,7 +421,7 @@ Template Name: home
                             <div class="calculation__result-btn"><p>Полный расчёт</p></div>
                         </div>
                         <div class="calculation__img">
-                            <img src="<?php the_field('calculation-img'); ?>" alt="car">
+                            <img decoding="async" src="<?php the_field('calculation-img'); ?>" alt="<?php the_field('calculation-alt');?>" title="<?php the_field('calculation-title');?>">
                         </div>
                     </div>
                 </div>
@@ -440,8 +440,8 @@ Template Name: home
                             while (have_rows('employees-slider')) : the_row(); ?>
 
                                 <div class="employees__slider-item">
-                                    <img src="<?php the_sub_field('employees-item'); ?>"
-                                         alt="employer">
+                                    <img decoding="async" src="<?php the_sub_field('employees-item'); ?>"
+                                         alt="<?php the_sub_field('employees-alt');?>" title="<?php the_sub_field('employees-title');?>">
                                 </div>
 
                             <?php endwhile;
@@ -539,8 +539,8 @@ Template Name: home
                         if (have_rows('contacts-create-sosial')):
                             while (have_rows('contacts-create-sosial')) : the_row(); ?>
                                 <a class="" href="<?php the_sub_field('contacts-sosial-link'); ?>">
-                                    <img src="<?php the_sub_field('contacts-sosial-icon'); ?>"
-                                         alt="social">
+                                    <img decoding="async" src="<?php the_sub_field('contacts-sosial-icon'); ?>"
+                                         alt="<?php the_sub_field('contacts-sosial-icon-alt');?>" title="<?php the_sub_field('contacts-sosial-icon-title');?>">
                                 </a>
                             <?php endwhile;
                         else :

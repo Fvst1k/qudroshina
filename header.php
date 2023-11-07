@@ -7,13 +7,27 @@ Template Name: header
 <html <?php language_attributes(); ?> >
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
-    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title><?php the_field('meta_tags'); ?></title>
+    <meta name="description" content="<?php the_field('description'); ?>"/>
+    <meta name="keywords" content="<?php the_field('keywords'); ?>"/>
+    <meta name="author" content="<?php the_field('author'); ?>"/>
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="<?php the_field('ogurl'); ?>"/>
+    <meta property="og:type" content="<?php the_field('ogtype'); ?>"/>
+    <meta property="og:title" content="<?php the_field('ogtitle'); ?>"/>
+    <meta property="og:description" content="<?php the_field('ogdescription'); ?>"/>
+    <meta property="og:image" content="<?php the_field('ogimage'); ?>"/>
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="<?php the_field('wittercard'); ?>"/>
+    <meta property="twitter:domain" content="<?php the_field('twitterdomain'); ?>"/>
+    <meta property="twitter:url" content="<?php the_field('twitterurl'); ?>"/>
+    <meta name="twitter:title" content="<?php the_field('twittertitle'); ?>"/>
+    <meta name="twitter:description" content="<?php the_field('twitterdescription'); ?>"/>
+    <meta name="twitter:image" content="<?php the_field('twitterimage'); ?>"/>
+    <meta property="og:image:width" content="<?php the_field('ogimagewidth'); ?>"/>
+    <meta property="og:image:height" content="<?php the_field('ogimageheight'); ?>"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -21,7 +35,7 @@ Template Name: header
 
 
 
-    <title>template</title>
+    <title><?php bloginfo('name'); ?></title>
 
     <?php wp_head(); ?>
     <?php $front_id = get_option('page_on_front'); ?>

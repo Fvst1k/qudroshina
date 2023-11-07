@@ -3,7 +3,7 @@
         <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero-background.png" alt="background">
     </div>
     <div class="services__bg services__bg_opacity">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/protector-hero.png" alt="bg">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/protector-hero.png" alt="background">
     </div>
     <div class="block__content block__content_services">
         <h2 class="services__title tl__title">
@@ -36,14 +36,15 @@
                 <?php the_field('solo-address-text-2'); ?>
             </div>
             <?php
-            if( have_rows('solo-address-item-repeater') ):
-                while ( have_rows('solo-address-item-repeater') ) : the_row();?>
+            if (have_rows('solo-address-item-repeater')):
+                while (have_rows('solo-address-item-repeater')) : the_row(); ?>
 
                     <div class="solo-address_item">
-                        <img src="<?php the_sub_field('solo-address-img'); ?>" alt="img">
+                        <img src="<?php the_sub_field('solo-address-img'); ?>"
+                             alt="<?php the_sub_field('solo-address-img-alt'); ?>" title="<?php the_sub_field('solo-address-img-title'); ?>">
                     </div>
 
-              <?php endwhile;
+                <?php endwhile;
             else :
             endif;
             ?>
@@ -52,10 +53,9 @@
         <div class="solo-address__btn-down">
             <a href="<?php the_field('solo-address-left-link'); ?>"
                class="hero__btn solo-address__btn_left"><?php the_field('solo-address-left'); ?></a>
-            <a href="tel:<?php the_field('solo-address-right-link');?>"
+            <a href="tel:<?php the_field('solo-address-right-link'); ?>"
                class="hero__btn"><?php the_field('solo-address-right'); ?></a>
         </div>
-
 
 
     </div>
