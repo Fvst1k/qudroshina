@@ -27,5 +27,8 @@ Template Name: price
         </div>
     </div>
 </section>
+<section class="map">
+    <?php the_field('map');?>
+</section>
 <?php get_footer(); ?>
 

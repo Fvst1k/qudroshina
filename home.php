@@ -486,8 +486,7 @@ Template Name: home
     </section>
 <?php }; ?>
     <section class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6a53c984f88b1d5500b7221c149089d50c445600b3cc80493419b90cb99b1ba9&amp;source=constructor"
-                width="100%" height="653" frameborder="0"></iframe>
+        <?php the_field('map');?>
     </section>
 <?php if (get_field('contacts-visible')) { ?>
     <section class="contacts">
