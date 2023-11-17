@@ -123,3 +123,48 @@ function mobileMenu() {
         document.querySelector('.header__mobile_menu').classList.toggle('active')
     })
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const questionElements = document.querySelectorAll('.question-block__question');
+
+    questionElements.forEach(function (questionElement) {
+        questionElement.addEventListener('click', function (event) {
+            const spollersElement = document.querySelector('.question-block__spollers');
+
+            if (spollersElement.classList.contains('one')) {
+                questionElements.forEach(function (otherQuestionElement) {
+                    if (otherQuestionElement !== questionElement) {
+                        otherQuestionElement.classList.remove('active');
+                        if (otherQuestionElement.nextElementSibling) {
+                            otherQuestionElement.nextElementSibling.style.display = 'none';
+                        }
+                    }
+                });
+            }
+
+            questionElement.classList.toggle('active');
+            if (questionElement.nextElementSibling) {
+                questionElement.nextElementSibling.style.display = questionElement.classList.contains('active') ? 'block' : 'none';
+            }
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const swiperTemp = new Swiper('.mySwiper', {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            475: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+        },
+    });
+});
