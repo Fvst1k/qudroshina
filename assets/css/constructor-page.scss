@@ -1419,6 +1419,8 @@
 }
 
 /*--------------------/steps--------------------*/
+
+/*--------------------- seo -------------------------*/
 .seo {
   padding: 90px 0 67px;
 }
@@ -1510,7 +1512,54 @@
     animation: expandText 0.3s ease-in-out forwards;
   }
 }
-/*--------------------- seo -------------------------*/
+
 
 /*--------------------- /seo -------------------------*/
-/*--------------------/Template---------------------*/
+
+/*--------------------- map -------------------------*/
+
+.map-template {
+  margin: 40px 0 0;
+}
+
+/*--------------------- /map -------------------------*/
+
+/*--------------------- template-btn -------------------*/
+
+.template-btn__row {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+  @include before-md(){
+    gap: 15px;
+  }
+
+
+}
+.constructor__btn {
+  display: block;
+  text-align: center;
+  padding: 31px 15px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  background: #F08E2B;
+  color: #FFF;
+  font-weight: 700;
+  transition: all ease-in-out 0.4s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @include before-md() {
+    padding: 18px 45px;
+  }
+
+}
+
+/*--------------------- template-btn -------------------*/
+  /*--------------------/TEMPLATE---------------------*/

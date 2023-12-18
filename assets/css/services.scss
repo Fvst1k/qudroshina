@@ -9,6 +9,12 @@
   }
 
 }
+.block__content_constructor {
+  padding: 265px 0 0;
+  @include before-sm(){
+    padding: 200px 0 0;
+  }
+}
 .services__bg {
   position: absolute;
   width: 100%;

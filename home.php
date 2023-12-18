@@ -18,7 +18,8 @@ Template Name: home
                     <?php the_field('hero-block-text'); ?>
                 </p>
                 <a href="<?php the_field('hero-block-btn-link'); ?>"
-                   class="hero__btn"><?php the_field('hero-block-btn'); ?></a>
+                   class="hero__btn"><?php the_field('hero-block-btn'); ?>
+                </a>
                 <div class="hero__car-img">
                     <img decoding="async"  src="<?php the_field('hero-block-img'); ?>" alt="<?php the_field('hero-block-img-alt');?>" title="<?php the_field('hero-block-img-title');?>">
                 </div>

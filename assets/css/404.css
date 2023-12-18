@@ -1,0 +1,48 @@
+/*-------------------- 404 not found --------------------*/
+.main__not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found__container {
+  color: #222;
+}
+
+.not-found {
+  transition: ease-in-out all 0.3s;
+}
+
+.not-found:hover {
+  transform: scale(1.05);
+}
+
+.not-found__title {
+  font-size: 150px;
+  font-weight: 800;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .not-found__title {
+    font-size: 75px;
+  }
+}
+.not-found__subtitle {
+  font-size: 36px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .not-found__subtitle {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .not-found__text {
+    font-size: 12px;
+  }
+}
+/*-------------------- /404 not found --------------------*/
+
+/*# sourceMappingURL=404.css.map */

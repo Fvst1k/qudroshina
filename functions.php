@@ -16,4 +16,15 @@ function addStyle()
 add_theme_support('title-tag');
 add_theme_support('custom-logo');
 add_theme_support('post-thumbnails');
+
+function custom_excerpt_length($excerpt){
+    $characters = 350; // Количество символов
+    if (strlen($excerpt) > $characters) {
+        return substr($excerpt, 0, strpos($excerpt, ' ', $characters));
+    }
+    return $excerpt;
+}
+
+add_filter('the_excerpt', 'custom_excerpt_length');
+
 ?>
